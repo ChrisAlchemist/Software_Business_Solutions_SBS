@@ -114,6 +114,7 @@ a.navbar-brand span {
   
   border-radius: 3%;
 }
+
 .nav-tabs > li.active > a {
 	color: #fff;
   cursor: default;  
@@ -595,7 +596,7 @@ footer {
 .last-div {
 	margin-top:40px;
     background: #000;
-    padding: 20px 0;
+    padding: 60px 0;
     position: relative;
 }
 
@@ -612,6 +613,28 @@ footer {
 .copyright a:hover {
     text-decoration: underline;
     color: #5C9F24;
+}
+
+.copyright img{
+  
+  height: 2.5em;
+  margin-top:-1.3em;
+
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+}
+.copyright img:hover{
+  
+  height: 3.5em;
+  margin-top:-1.3em;
+
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+
 }
 
 ul.social-network {

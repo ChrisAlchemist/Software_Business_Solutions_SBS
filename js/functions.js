@@ -15,25 +15,32 @@ $('#reload-slider').click(function(e){
 });
 
         $(window).scroll(function(){
-    		if ($(this).scrollTop() > 100 && $(this).scrollTop()<2000 ) {
+    		if ($(this).scrollTop() > 100) {
     			$('.scrollup').fadeIn();
-    			} else {
-    				$('.scrollup').fadeOut();
-    			}
+			 }
+            
+            else 
+            {
+				$('.scrollup').fadeOut();
+			}
 
             if($(this).scrollTop()> 500)
             {
                 $('.logo').css({ 'height':'5em', 
                     'margin-top':'-2.1em',
-                    '-webkit-transition': 'all .4s ease-in-out',
-                    '-moz-transition': 'all .4s ease-in-out',
-                    '-o-transition': 'all .4s ease-in-out',
-                    '-ms-transition': 'all .4s ease-in-out' 
+                    '-webkit-transition': 'all .2s ease-in-out',
+                    '-moz-transition': 'all .2s ease-in-out',
+                    '-o-transition': 'all .2s ease-in-out',
+                    '-ms-transition': 'all .2s ease-in-out' 
                 });
+
+                
 
                 //$("html, .logo").animate({ height: '5em'},{margin-top:'-2.1em'}, 1000);
 
-            }else{
+            }
+            else
+            {
                 $('.logo').css({ 'height':'4em',
                     'margin-top':'-1.7em',
                     '-webkit-transition': 'all .2s ease-in-out',
