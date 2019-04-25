@@ -178,6 +178,11 @@ a.navbar-brand span {
 	text-align:center;
 }
 
+#icon-mobile{
+  margin-top: 1%;
+  margin-bottom: 8%;
+}
+
 .icon {
   /*color:#36CBD4;  */
 	color:#000;
