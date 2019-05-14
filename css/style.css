@@ -661,7 +661,10 @@ ul.social-network li a {
 	color:#fff;	
 }
 ul.social-network li a:hover {	
-	color:#5C9F24;	
+	color:#5C9F24;
+}
+.social-network a:hover{
+  color:#5C9F24;
 }
 
 a.scrollup{
@@ -683,4 +686,9 @@ a.scrollup:hover{
 	opacity:1;
 	background-color:#5C9F24;
 	color:#fff;;	
+}
+
+#employer-social{
+  
+  margin-right: 5%;
 }
