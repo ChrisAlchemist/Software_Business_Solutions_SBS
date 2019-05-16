@@ -24,7 +24,7 @@ $('#reload-slider').click(function(e){
 				$('.scrollup').fadeOut();
 			}
 
-            if($(this).scrollTop()> 500)
+            if($(this).scrollTop()> 80)
             {
                 $('.logo').css({ 'height':'5em', 
                     'margin-top':'-2.1em',
@@ -34,7 +34,9 @@ $('#reload-slider').click(function(e){
                     '-ms-transition': 'all .2s ease-in-out' 
                 });
 
-                
+                $('#menu').css({
+                    'opacity': '0.8'
+                });
 
                 //$("html, .logo").animate({ height: '5em'},{margin-top:'-2.1em'}, 1000);
 
@@ -48,6 +50,10 @@ $('#reload-slider').click(function(e){
                     '-o-transition': 'all .2s ease-in-out',
                     '-ms-transition': 'all .2s ease-in-out'
                   });
+
+                $('#menu').css({
+                    'opacity': '1'
+                });
 
                 //$("html, .logo").animate({ height: '4em'},{margin-top:'-1.7em'}, 1000);
             }
