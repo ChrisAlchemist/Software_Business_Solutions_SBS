@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link &lt;link rel="shortcut icon" href="~/img/icono/icono.png" type="image/png" /&gt;/>
+    @*<link 1&lt;link rel="icon" href="~/img/icono/icono.png" type="image/png" /&gt;>*@
+
+
+    <title>SBS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+
+    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+    <link href="favicon.ico" rel="shortcut icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/lib/animate-css/animate.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <div >
+        @RenderBody()
+        <hr />
+        <footer>
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">                                
+                                &copy; Copyright <strong>SBS Software Business Solutions</strong>. All Rights Reserved
+                            </div>
+                            @*<div class="credits">
+
+                                Templates by <a href="http://www.servitecflhuaraz.com/">SBS</a>
+                            </div>*@
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </footer>
+    </div>
+
+    @*@Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)*@
+</body>
+</html>
