@@ -1,5 +1,8 @@
 jQuery(document).ready(function( $ ) {
 
+
+$('#myModalActualizaMonto').modal({ fadeDuration: 100 });
+
   // Preloader
   $(window).on('load', function() {
     $('#preloader').delay(100).fadeOut('slow',function(){$(this).remove();});
