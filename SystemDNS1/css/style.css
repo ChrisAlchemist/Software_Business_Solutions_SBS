@@ -479,7 +479,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container {
-  background: url(../img/about-img.jpg) left top no-repeat;
+  /*background: url(../img/about-img.jpg) left top no-repeat;*/
+}
+.about-container img{
+  width: 50%;  
+}
+
+#contenido-texto{
+  margin-top: -28%;
 }
 
 #about .about-content {
