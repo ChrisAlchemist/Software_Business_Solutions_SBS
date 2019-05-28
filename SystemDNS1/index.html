@@ -230,17 +230,20 @@
       </div>
 
       <div class="row">
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-1.jpg);" href="" target="_blank">
-            <div class="details">
-              <h4>Portfolio 1</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
+        <div class="col-md-3" onclick="mostrarDescripcion(1)">
+          <ul class="grid">
+            
+            <a class="portfolio-item" style="background-image: url(img/work/logicZotz/logicZotz1.jpg);" href="Javascript:" >
+              <div class="details">
+                <h4>Portfolio 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </ul>
         </div>
 
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-2.jpg);" href="" target="_blank">
+        <div class="col-md-3" onclick="mostrarDescripcion(2)">
+          <a class="portfolio-item" style="background-image: url(img/work/cpr_soluciones/cpr_soluciones1.jpg);" href="Javascript:" >
             <div class="details">
               <h4>Portfolio 2</h4>
               <span>Alored dono par</span>
@@ -248,8 +251,8 @@
           </a>
         </div>
 
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-3.jpg);" href="" target="_blank">
+        <div class="col-md-3" onclick="mostrarDescripcion(3)">
+          <a class="portfolio-item" style="background-image: url(img/work/tgz/tgz3.jpg);" href="Javascript:">
             <div class="details">
               <h4>Portfolio 3</h4>
               <span>Alored dono par</span>
@@ -257,8 +260,8 @@
           </a>
         </div>
 
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-4.jpg);" href="" target="_blank">
+        <div class="col-md-3" onclick="mostrarDescripcion(4)">
+          <a class="portfolio-item" style="background-image: url(img/work/toz/toz2.jpg);" href="Javascript:" >
             <div class="details">
               <h4>Portfolio 4</h4>
               <span>Alored dono par</span>
@@ -266,8 +269,8 @@
           </a>
         </div>
 
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-5.jpg);" href="" target="_blank">
+        <div class="col-md-3" onclick="mostrarDescripcion(5)">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-5.jpg);" href="Javascript:">
             <div class="details">
               <h4>Portfolio 5</h4>
               <span>Alored dono par</span>
@@ -275,8 +278,8 @@
           </a>
         </div>
 
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-6.jpg);" href="" target="_blank">
+        <div class="col-md-3" onclick="mostrarDescripcion(1)">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-6.jpg);" href="Javascript:">
             <div class="details">
               <h4>Portfolio 6</h4>
               <span>Alored dono par</span>
@@ -284,17 +287,17 @@
           </a>
         </div>
 
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-7.jpg);" href="" target="_blank">
-            <div class="details">
+        <div class="col-md-3" onclick="mostrarDescripcion(1)">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-7.jpg);" href="Javascript:">
+            <div class="details" onclick="mostrarDescripcion(1)">
               <h4>Portfolio 7</h4>
               <span>Alored dono par</span>
             </div>
           </a>
         </div>
 
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-8.jpg);" href="" target="_blank">
+        <div class="col-md-3" onclick="mostrarDescripcion(1)">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-8.jpg);" href="Javascript:">
             <div class="details">
               <h4>Portfolio 8</h4>
               <span>Alored dono par</span>
@@ -516,25 +519,25 @@
   	Modals
 	=====================-->
 
-<!--
-  <div class="modal fade" id="myModalActualizaMonto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+  <div class="modal fade" id="modalDescripcionPortafolio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">ESTATUS DE LA ACCIÓN</h4>
+                <h4 class="modal-title" id="myModalLabel">Descripción</h4>
             </div>
-            <div class="modal-body">
-                <p id="mensaje-actualizaMonto"></p>
+            <div id="contenidoDescripcionPortafolio" class="modal-body">
+                <img id="imagenesPortafolio" width = '100%' height = '100%' />
+                <p id="descripcionPortafolio"></p>
             </div>
             <div class="modal-footer">
-                <button onclick="ActualizarMonto()" type="button" class="btn btn-info"> Aceptar</button>
-
-                <button type="button" class="btn btn-info" data-dismiss="modal"> Cancelar</button>
+                <!--<button onclick="ActualizarMonto()" type="button" class="btn btn-info"> Aceptar</button>-->
+                <button type="button" class="btn btn-info" data-dismiss="modal"> Aceptar</button>
             </div>
         </div>
     </div>
 </div>
--->
+
 <!---modals-->
 
 
@@ -555,30 +558,6 @@
 
 <script>
 
-if($( window ).width()>=1263){
-    $("#service-mobile").css({'width': '16%'});
-    $("#icon-mobile").css({'margin-left': '18%'});
-    //alert("es: " + $( window ).width());
-  }
-  else{
-    
-   //alert("estilo del icono"); 
-   $("#service-mobile").removeAttr("style");
-    $("#icon-mobile").removeAttr("style");
-  }
-
-$(window).resize(function() {
-  if($( window ).width()>=1263){
-    $("#service-mobile").css({'width': '16%'});
-    $("#icon-mobile").css({'margin-left': '18%'});
-    //alert("es: " + $( window ).width());
-  }
-  else{
-   //alert("estilo estilo del icono"); 
-   $("#service-mobile").removeAttr("style");
-    $("#icon-mobile").removeAttr("style");
-  }
-});
 //alert("es: " + $( window ).width());
 // alert("es" + $( window ).width()) 
 //alert("La resolución de tu pantalla es: " + screen.width + " x " + screen.height) 
