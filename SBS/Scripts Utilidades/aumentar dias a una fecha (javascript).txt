@@ -1,0 +1,44 @@
+Date.prototype.toString = function() { return this.getDate()+"/"+(this.getMonth()+1)+"/"+this.getFullYear(); } 
+
+var miFecha = new Date();
+alert( miFecha ); Date.parse("Aug 9, 1995") ;
+/////////////////
+Date.prototype.toString = function() { return this.getDate()+"/"+(this.getMonth()+1)+"/"+this.getFullYear(); } 
+
+var miFecha = new Date();
+alert( miFecha ); Date.parse("Aug 9, 1995") ;
+807948000000
+Date()
+"Tue May 21 2019 16:55:32 GMT-0500 (hora de verano central)"
+Date().length
+58
+Date().split(" ");
+(10) ["Tue", "May", "21", "2019", "16:57:04", "GMT-0500", "(hora", "de", "verano", "central)"]
+var fech1 = Date().split(" ")[1]
+undefined
+console.log(fech1);
+VM1462:1 May
+undefined
+var FechaH = Date().split(" ")
+undefined
+var FechaH[] = Date().split(" ")
+VM1520:1 Uncaught SyntaxError: Unexpected token [
+var FechaH = Date().split(" ")
+undefined
+var F1 = FechaH[1] +" "+FechaH[2]+", "+FechaH[3]
+undefined
+console.log(F1);
+VM1665:1 May 21, 2019
+undefined
+Date.parse(F1);
+1558414800000
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+Date.prototype.toString = function() { return this.getDate()+"/"+(this.getMonth()+1)+"/"+this.getFullYear(); } 
+
+var miFecha = new Date();
+var dias = 30; // Número de días a agregar
+miFecha.setDate(miFecha.getDate() + dias);
+console.log(miFecha); 

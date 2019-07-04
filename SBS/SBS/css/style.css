@@ -479,7 +479,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container {
-  background: url(../img/about-img.jpg) left top no-repeat;
+  /*background: url(../img/about-img.jpg) left top no-repeat;*/
+}
+.about-container img{
+  width: 50%;  
+}
+
+#contenido-texto{
+  margin-top: -28%;
 }
 
 #about .about-content {
@@ -602,7 +609,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item {
   background-position: center center;
-  background-size: cover;
+  /*background-size: cover;*/
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
   height: 260px;

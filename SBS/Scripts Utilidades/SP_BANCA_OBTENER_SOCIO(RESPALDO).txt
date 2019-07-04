@@ -1,0 +1,84 @@
+USE [BANCA]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_banca_obtener_socio]    Script Date: 19/02/2019 04:59:01 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+/*
+
+Autor			Cristian Pérez
+UsuarioRed		pegc837648
+Fecha			20181220
+Objetivo		Obtener los datos del socio en banca
+Proyecto		Administrador de banca
+Ticket			ticket
+
+*/
+
+ALTER proc
+
+	[dbo].[sp_banca_obtener_socio]
+	
+		-- parámetros
+		
+		@numero_socio bigint,
+		@idTIpoPersona int  =1
+
+as
+
+	BEGIN
+
+begin try
+declare
+@existeError bit  = 0 ,
+@mensajeError varchar(500) = ''
+
+	-- validaciones
+	
+	if not exists (select 1 from BANCA..TBL_BANCA_SOCIOS where numero_socio = @numero_socio)
+	 begin
+		SELECT 
+		0 estatus ,
+		1 existeError,
+		'EL socio no esta registrado en “CMV Finanzas”. |' mensajeError
+	end
+	else
+		SELECT 
+	1 estatus ,
+	0 existeError,
+	'' mensajeError,
+	isnull(p.Nombre_s,' ')+' '+isnull(p.Apellido_Paterno,' ')+' '+isnull(p.Apellido_Materno,' ') nombreCompleto,
+	CASE WHEN S.numero_socio IS NULL THEN 1  ELSE 0 END puedeActivar,
+	CASE WHEN S.id_motivo_bloqueo  <> 1 THEN 1  ELSE 0 END bloqueado,
+	CASE WHEN CB.numero IS NULL THEN 0 ELSE 1 END tieneContratoBanca,
+	isnull(S.banca_activa,0)banca_activa,
+	ISNULL(s.id_estatus_banca,0) id_estatus_banca,
+	ISNULL(CB.monto_maximo_transferencia,0) monto_maximo_transferencia,
+	CB.id_tipo_notificacion,
+	p.Mail,
+	p.Tel_Celular,
+	C.Codigo_Postal,C.Nombre_Colonia , L.Nombre_Localidad, E.DESCRIPCION,
+	isnull(p.Calle,'')+' '+isnull(p.Numero_Exterior,'')+', '+ISNULL(C.Nombre_Colonia,' ')+','+isnull(cast(C.Codigo_Postal as varchar),'')+' '+ISNULL(L.Nombre_Localidad,'')+' '+ISNULL(E.DESCRIPCION,' ') domiCompleto,
+	s.id_motivo_bloqueo,
+	P.*
+	FROM HAPE..PERSONA  P
+	LEFT JOIN hape..CNBV_MNPIO_COL C ON P.Id_Colonia_CNBV = C.Id_Colonia_CNBV
+	LEFT JOIN hape..CNBV_LOCALIDADES L ON L.Id_Localidad_CNBV = C.Id_Localidad_CNBV AND C.Id_Entidad_Federativa = L.Id_Entidad_Federativa
+	LEFT JOIN hape..ENTIDAD_FEDERATIVA E ON E.ID_ENTIDAD_FEDERATIVA  = C.Id_Entidad_Federativa
+	LEFT JOIN BANCA..TBL_BANCA_SOCIOS  S ON S.NUMERO_SOCIO = P.Numero AND P.Id_Tipo_Persona = @idTIpoPersona
+	LEFT JOIN BANCA..TBL_BANCA_CONTRATOS_BANCA CB ON CB.Numero = @numero_socio 
+	WHERE P.NUMERO = @numero_socio 
+	AND Id_Tipo_Persona =  @idTIpoPersona
+	-- fin de validaciones
+
+end try
+begin catch
+	select 0 as estatus , ERROR_MESSAGE() AS mensaje 	
+	
+end catch
+
+END
+
+
