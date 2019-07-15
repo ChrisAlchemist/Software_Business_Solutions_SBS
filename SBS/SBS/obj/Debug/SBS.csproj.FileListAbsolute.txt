@@ -227,7 +227,6 @@ C:\Users\pegc837648\Desktop\Documentacion Cristian\Cristian documentos\Software_
 C:\Users\pegc837648\Desktop\Documentacion Cristian\Cristian documentos\Software_Business_Solutions_SBS\SBS\SBS\bin\es\System.Web.WebPages.resources.dll
 C:\Users\pegc837648\Desktop\Documentacion Cristian\Cristian documentos\Software_Business_Solutions_SBS\SBS\SBS\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\pegc837648\Desktop\Documentacion Cristian\Cristian documentos\Software_Business_Solutions_SBS\SBS\SBS\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\pegc837648\Desktop\Documentacion Cristian\Cristian documentos\Software_Business_Solutions_SBS\SBS\SBS\obj\Debug\SBS.csprojAssemblyReference.cache
 C:\Users\pegc837648\Desktop\Documentacion Cristian\Cristian documentos\Software_Business_Solutions_SBS\SBS\SBS\obj\Debug\SBS.csproj.CoreCompileInputs.cache
 C:\Users\pegc837648\Desktop\Documentacion Cristian\Cristian documentos\Software_Business_Solutions_SBS\SBS\SBS\obj\Debug\SBS.csproj.CopyComplete
 C:\Users\pegc837648\Desktop\Documentacion Cristian\Cristian documentos\Software_Business_Solutions_SBS\SBS\SBS\obj\Debug\SBS.dll

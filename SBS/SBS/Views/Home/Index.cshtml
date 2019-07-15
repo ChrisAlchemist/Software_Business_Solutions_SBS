@@ -404,55 +404,62 @@ Contact Section
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-3 col-md-push-2">
-                <div class="info">
-                    <div>
-                        <i class="fa fa-map-marker"></i>
-                        <p>A108 Adam Street<br>New York, NY 535022</p>
-                    </div>
+        <form class="contact100-form validate-form">
+            <div class="col-md-6">
+                <div class="wrap-input100 validate-input" data-validate="El nombre de tu negocio es requerido">
+                    <input class="input100" type="text" name="busines-name" placeholder="¿Cual es el nombre de tu negocio?">
+                    <span class="focus-input100"></span>
+                </div>
 
-                    <div>
-                        <i class="fa fa-envelope"></i>
-                        <p>isc.cristian.perez.54@gmail.com</p>
-                    </div>
+                <div class="wrap-input100 validate-input" data-validate="Una cuenta de correo es requerida: ex@abc.xyz">
+                    <input class="input100" type="text" name="email" placeholder="¿Cual es tu correo electrónico?">
+                    <span class="focus-input100"></span>
+                </div>
 
-                    <div>
-                        <i class="fa fa-phone"></i>
-                        <p>+52 786 102 1588</p>
-                    </div>
 
+                <div class="wrap-select100 validate-select" data-validate="Es necesario que seleciones un tipo de proyecto">
+                    <select class="select100" id="tipoCotizacion">
+                        <option value="0" disabled selected>Tipo de proyecto a cotizar</option>
+                        <option value="1">Sitio Web</option>
+                        <option value="2">App Móbil</option>
+                        <option value="3">Aplicación Windows</option>
+                    </select>
+                    <span class="focus-select100"></span>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="wrap-input100 validate-input" data-validate="Tu número de telefono es requerido">
+                    <input class="input100" type="text" name="phone" placeholder="¿Cual es tu número de teléfono?">
+                    <span class="focus-input100"></span>
+                </div>
 
-            <div class="col-md-5 col-md-push-2">
-                <div class="form">
-                    <div id="sendmessage">Tu mensaje ha sido enviado. Gracias!</div>
-                    <div id="errormessage"></div>
-                    <form action="" method="post" role="form" class="contactForm">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico" data-rule="email" data-msg="Please enter a valid email" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div class="validation"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
-                            <div class="validation"></div>
-                        </div>
-                        <div class="text-center"><button type="submit">Enviar</button></div>
-                    </form>
+                <div class="wrap-input100 validate-input" data-validate="Tu nombre completo es requerido">
+                    <input class="input100" type="text" name="name" placeholder="¿Cual es tu nombre completo?">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Tu número de telefono es requerido">
+                    <input class="input100" type="text" name="phone" placeholder="¿Cual es tu presupuesto para el proyecto?">
+                    <span class="focus-input100"></span>
                 </div>
             </div>
-        </div>
+            <div class="wrap-input100 validate-input" data-validate="Menciona algún medio por el cual nos has encontrado">                
+                <input class="input100" name="message" placeholder="¿Cómo nos encontraste?">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="container-contact100-form-btn">
+                <button class="contact100-form-btn">
+                    <span>
+                        Enviar
+                        <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+        </form>
     </div>
 </section>
+
 
 
 <!--======================
@@ -539,3 +546,4 @@ Contact Section
 <script src="~/js/custom.js"></script>
 
 <script src="~/contactform/contactform.js"></script>
+<script src="~/js/main.js"></script>

@@ -8,8 +8,8 @@ body {
 }
 
 a {
-  color: #24547b;
-  transition: 0.5s;
+    color: #D35400;
+    transition: 0.5s;
 }
 
 a:hover, a:active, a:focus {
@@ -69,8 +69,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #24547b;
-  color: #fff;
+    background: #D35400;
+    color: #fff;
 }
 
 
@@ -151,9 +151,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-  background: #24547b;
-  border: 2px solid #24547b;
-  color: #fff;
+    background: #D35400;
+    border: 2px solid #D35400;
+    color: #fff;
 }
 
 #hero .btn-get-started:hover {
@@ -167,10 +167,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-#hero .btn-services:hover {
-  background: #24547b;
-  border: 2px solid #24547b;
-}
+    #hero .btn-services:hover {
+        background: #D35400;
+        border: 2px solid #D35400;
+    }
 
 /*--------------------------------------------------------------
 # Header
@@ -305,9 +305,9 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: #25d8fc;
-}
+    .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
+        color: #E67E22;
+    }
 
 .nav-menu ul {
   margin: 4px 0 0 15px;
@@ -413,13 +413,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-#mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #24547b;
-}
+    #mobile-nav ul .menu-has-children i.fa-chevron-up {
+        color: #D35400;
+    }
 
-#mobile-nav ul .menu-item-active {
-  color: #24547b;
-}
+    #mobile-nav ul .menu-item-active {
+        color: #D35400;
+    }
 
 #mobile-body-overly {
   width: 100%;
@@ -464,11 +464,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-title-divider {
-  width: 50px;
-  height: 3px;
-  background: #24547b;
-  margin: 0 auto;
-  margin-bottom: 20px;
+    width: 50px;
+    height: 3px;
+    background: #D35400;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 /* Get Started Section
@@ -519,14 +519,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
-#services .service-icon {
-  float: left;
-  background: #24547b;
-  padding: 16px;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid #24547b;
-}
+    #services .service-icon {
+        float: left;
+        background: #D35400;
+        padding: 16px;
+        border-radius: 50%;
+        transition: 0.5s;
+        border: 1px solid #D35400;
+    }
 
 #services .service-icon i {
   color: #fff;
@@ -537,9 +537,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fff;
 }
 
-#services .service-item:hover .service-icon i {
-  color: #24547b;
-}
+    #services .service-item:hover .service-icon i {
+        color: #D35400;
+    }
 
 #services .service-title {
   margin-left: 80px;
@@ -595,10 +595,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#subscribe .subscribe-btn:hover {
-  background: #24547b;
-  border: 2px solid #24547b;
-}
+    #subscribe .subscribe-btn:hover {
+        background: #D35400;
+        border: 2px solid #D35400;
+    }
 
 /* Portfolio Section
 --------------------------------*/
@@ -690,11 +690,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   max-width: 100%;
 }
 
-#testimonials .profile h4 {
-  font-weight: 700;
-  color: #24547b;
-  margin-bottom: 5px;
-}
+    #testimonials .profile h4 {
+        font-weight: 700;
+        color: #D35400;
+        margin-bottom: 5px;
+    }
 
 #testimonials .profile span {
   color: #333333;
@@ -766,9 +766,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #b3b3b3;
 }
 
-#team .member .social a:hover {
-  color: #24547b;
-}
+    #team .member .social a:hover {
+        color: #D35400;
+    }
 
 #team .member .social i {
   font-size: 18px;
@@ -786,26 +786,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #333333;
 }
 
-#contact .info i {
-  font-size: 32px;
-  color: #24547b;
-  float: left;
-}
+    #contact .info i {
+        font-size: 32px;
+        color: #D35400;
+        float: left;
+    }
 
 #contact .info p {
   padding: 0 0 10px 50px;
   line-height: 24px;
 }
 
-#contact .form #sendmessage {
-  color: #24547b;
-  border: 1px solid #24547b;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
+    #contact .form #sendmessage {
+        color: #D35400;
+        border: 1px solid #D35400;
+        display: none;
+        text-align: center;
+        padding: 15px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
 
 #contact .form #errormessage {
   color: red;
@@ -834,17 +834,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: none;
 }
 
-#contact .form button[type="submit"] {
-  background: #24547b;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-}
+    #contact .form button[type="submit"] {
+        background: #D35400;
+        border: 0;
+        padding: 10px 24px;
+        color: #fff;
+        transition: 0.4s;
+    }
 
-#contact .form button[type="submit"]:hover {
-  background: #25d8fc;
-}
+    #contact .form button[type="submit"]:hover {
+        background: #E67E22;
+    }
 
 /*--------------------------------------------------------------
 # Footer
