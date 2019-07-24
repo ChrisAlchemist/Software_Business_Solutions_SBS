@@ -125,35 +125,39 @@ Services Section
         </div>
 
         <div class="row">
-            <div class="col-md-4 service-item">
-                <div class="service-icon"><i class="fa fa-code"></i></div>
-                <h4 class="service-title"><a href="">Desarrollo Web</a></h4>
-                <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <div class="col-md-12">
+                <div class="col-md-4 service-item">
+                    <div class="service-icon"><i class="fa fa-code"></i></div>
+                    <h4 class="service-title"><a href="">Desarrollo Web</a></h4>
+                    <p class="service-description">Enfocados en crear sitios web de calidad con el fin de automatizar las necesidades de tu negocio.</p>
+                </div>
+                <div class="col-md-4 service-item">
+                    <div class="service-icon"><i class="fa fa-desktop"></i></div>
+                    <h4 class="service-title"><a href="">Apps Windows</a></h4>
+                    <p class="service-description">Creamos aplicaciones de escritorio windows orientados a la administración de tu negocio.</p>
+                </div>
+                <div class="col-md-4 service-item">
+                    <div id="service-mobile" class="service-icon"><i id="icon-mobile" class="fas fa-mobile-alt"></i></div>
+                    <h4 class="service-title"><a href="">Apps</a></h4>
+                    <p class="service-description">Hoy en dia mas del 75% de la población a nivel mundial usan un smart phone, no te quedes atras creamos la app ideal para tu negocio.</p>
+                </div>
             </div>
-            <div class="col-md-4 service-item">
-                <div class="service-icon"><i class="fa fa-desktop"></i></div>
-                <h4 class="service-title"><a href="">Apps Windows</a></h4>
-                <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            </div>
-            <div class="col-md-4 service-item">
-                <div id="service-mobile" class="service-icon"><i id="icon-mobile" class="fas fa-mobile-alt"></i></div>
-                <h4 class="service-title"><a href="">Apps</a></h4>
-                <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-            <div class="col-md-4 service-item">
-                <div class="service-icon"><i class="fa fa-laptop"></i></div>
-                <h4 class="service-title"><a href="">IOS</a></h4>
-                <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-            <div class="col-md-4 service-item">
-                <div class="service-icon"><i class="fa fa-road"></i></div>
-                <h4 class="service-title"><a href="">Nemo Enim</a></h4>
-                <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-            <div class="col-md-4 service-item">
-                <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
-                <h4 class="service-title"><a href="">Eiusmod Tempor</a></h4>
-                <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            <div class="col-md-12">
+                <div class="col-md-4 service-item">
+                    <div class="service-icon"><i class="fa fa-laptop"></i></div>
+                    <h4 class="service-title"><a href="">IOS</a></h4>
+                    <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+                <div class="col-md-4 service-item">
+                    <div class="service-icon"><i class="fa fa-road"></i></div>
+                    <h4 class="service-title"><a href="">Diseño web</a></h4>
+                    <p class="service-description">¿Necesitas un sitio informativo? nosotros diseñamos el marketing digital de tu negocio</p>
+                </div>
+                <div class="col-md-4 service-item">
+                    <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
+                    <h4 class="service-title"><a href="">Eiusmod Tempor</a></h4>
+                    <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                </div>
             </div>
         </div>
     </div>
@@ -167,10 +171,10 @@ Subscrbe Section
         <div class="row">
             <div class="col-md-8">
                 <h3 class="subscribe-title">Recibe actualizaciones</h3>
-                <p class="subscribe-text">Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much more!</p>
+                <p class="subscribe-text">Unete a nuestra comunidad y no te pierdas lo nuevo en nuestros servicios, recibe información sobre nuestros nuestras actualizaciones.</p>
             </div>
             <div class="col-md-4 subscribe-btn-container">
-                <a class="subscribe-btn" href="#">Suscribirse</a>
+                <a class="subscribe-btn"  href="javascript:mostrarSuscribirse()">Suscribirse</a>
             </div>
         </div>
     </div>
@@ -400,25 +404,25 @@ Contact Section
             <div class="col-md-12">
                 <h3 class="section-title">Contactanos</h3>
                 <div class="section-title-divider"></div>
-                <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                <p class="section-description">Cotizamos tu proyecto, solo contactanos !</p>
             </div>
         </div>
 
         <form class="contact100-form validate-form">
             <div class="col-md-6">
                 <div class="wrap-input100 validate-input" data-validate="El nombre de tu negocio es requerido">
-                    <input class="input100" type="text" name="busines-name" placeholder="¿Cual es el nombre de tu negocio?">
+                    <input id="inputNegocio" class="input100" type="text" name="busines-name" placeholder="¿Cual es el nombre de tu negocio?">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Una cuenta de correo es requerida: ex@abc.xyz">
-                    <input class="input100" type="text" name="email" placeholder="¿Cual es tu correo electrónico?">
+                    <input id="inputMail" class="input100" type="text" name="email" placeholder="¿Cual es tu correo electrónico?">
                     <span class="focus-input100"></span>
                 </div>
 
 
                 <div class="wrap-select100 validate-select" data-validate="Es necesario que seleciones un tipo de proyecto">
-                    <select class="select100" id="tipoCotizacion">
+                    <select id="selectTipoProyecto" class="select100" id="tipoCotizacion">
                         <option value="0" disabled selected>Tipo de proyecto a cotizar</option>
                         <option value="1">Sitio Web</option>
                         <option value="2">App Móbil</option>
@@ -429,22 +433,22 @@ Contact Section
             </div>
             <div class="col-md-6">
                 <div class="wrap-input100 validate-input" data-validate="Tu número de telefono es requerido">
-                    <input class="input100" type="text" name="phone" placeholder="¿Cual es tu número de teléfono?">
+                    <input id="inputTelCelular" class="input100" type="text" name="phone" placeholder="¿Cual es tu número de teléfono?">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Tu nombre completo es requerido">
-                    <input class="input100" type="text" name="name" placeholder="¿Cual es tu nombre completo?">
+                    <input id="inputNombre" class="input100" type="text" name="name" placeholder="¿Cual es tu nombre completo?">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Tu número de telefono es requerido">
-                    <input class="input100" type="text" name="phone" placeholder="¿Cual es tu presupuesto para el proyecto?">
+                    <input id="inputPresupuesto" class="input100" type="text" name="phone" placeholder="¿Cual es tu presupuesto para el proyecto?">
                     <span class="focus-input100"></span>
                 </div>
             </div>
             <div class="wrap-input100 validate-input" data-validate="Menciona algún medio por el cual nos has encontrado">                
-                <input class="input100" name="message" placeholder="¿Cómo nos encontraste?">
+                <input id="inputMedioContacto" class="input100" name="message" placeholder="¿Cómo nos encontraste?">
                 <span class="focus-input100"></span>
             </div>
 
@@ -480,6 +484,34 @@ Contact Section
             <div class="modal-footer">
                 <!--<button onclick="ActualizarMonto()" type="button" class="btn btn-info"> Aceptar</button>-->
                 <button type="button" class="btn btn-info" data-dismiss="modal"> Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalSuscribirse" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="contact100-form validate-form">
+                
+                <div class="wrap-input100 validate-input" id= "tuCorreo" data-validate="Tu correo electrónico es requerido">
+                    <input class="input100" id= "tuNombre" type="text" name="phone" placeholder="Ingresa tu correo electrónico">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Tu nombre completo es requerido">
+                    <input class="input100" type="text" name="name" placeholder="Dinos tu nombre">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn" onclick="javascript:Suscribirse();">
+                        <span>
+                            Suscribirse
+                            @*<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>*@
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>

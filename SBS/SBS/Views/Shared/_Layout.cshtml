@@ -30,6 +30,8 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+    <!--Font Awesome link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- Bootstrap CSS File -->
     <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,6 +45,52 @@
     <link href="~/css/style.css" rel="stylesheet" />
     <link href="~/css/main.css" rel="stylesheet" />
     <link href="~/css/util.css" rel="stylesheet" />
+
+
+    <script>
+
+        function rootUrl(url) {
+            var _rootUrl = '@Url.Content("~")';
+            var x = url;
+            if (url.indexOf(_rootUrl) != 0) {
+                x = _rootUrl + "/" + url;
+                x = x.replace(/\/\//g, "/").replace(/\/\//g, "/");
+            }
+            return x;
+        };
+
+        function valida(e) {
+            tecla = (document.all) ? e.keyCode : e.which;
+
+            //Tecla de retroceso para borrar, siempre la permite
+            if (tecla == 8) {
+                return true;
+            }
+
+            // Patron de entrada, en este caso solo acepta numeros
+            patron = /[0-9]/;
+            tecla_final = String.fromCharCode(tecla);
+            return patron.test(tecla_final);
+        }
+
+        function formatCurrency(num)
+        {
+            num = num.toString().replace(/ |,/g,'');
+            num = num.toString().replace('$','');
+            if(isNaN(num))
+                num = "0";
+            cents = Math.floor((num*100+0.5)%100);
+            num = Math.floor((num*100+0.5)/100).toString();
+            if(cents < 10)
+                cents = "0" + cents;
+            for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)
+                num = num.substring(0,num.length-(4*i+3))+','+num.substring(num.length-(4*i+3));
+            return ('$' + num + '.' + cents);
+        }
+
+
+    </script>
+
 </head>
 <body>
     

@@ -135,13 +135,22 @@ function mostrarDescripcion(numPortafolio){
   } 
 
     $('#modalDescripcionPortafolio').modal({ fadeDuration: 100 });
-  }
+}
+
+function mostrarSuscribirse() {
+    $('#modalSuscribirse').modal({ fadeDuration: 100 });
+    modalSuscribirse
+}
 
 //propiedades para el icono de la s apps
 if($( window ).width()>=1263){
   $("#service-mobile").css({'width': '16%'});
   $("#icon-mobile").css({'margin-left': '18%'});
   //alert("es: " + $( window ).width());
+}
+else if ($(window).width() <= 500) {
+    $("#service-mobile").css({ 'width': '15%' });
+    $("#icon-mobile").css({ 'margin-left': '20%' });
 }
 else{
   
@@ -156,6 +165,12 @@ if($( window ).width()>=1263){
   $("#icon-mobile").css({'margin-left': '18%'});
   //alert("es: " + $( window ).width());
 }
+else if ($(window).width() <=500)
+{
+    $("#service-mobile").css({ 'width': '15%' });
+    $("#icon-mobile").css({ 'margin-left': '20%' });
+}
+
 else{
  //alert("estilo estilo del icono"); 
  $("#service-mobile").removeAttr("style");

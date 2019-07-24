@@ -231,3 +231,4 @@ C:\Users\pegc837648\Desktop\Documentacion Cristian\Cristian documentos\Software_
 C:\Users\pegc837648\Desktop\Documentacion Cristian\Cristian documentos\Software_Business_Solutions_SBS\SBS\SBS\obj\Debug\SBS.csproj.CopyComplete
 C:\Users\pegc837648\Desktop\Documentacion Cristian\Cristian documentos\Software_Business_Solutions_SBS\SBS\SBS\obj\Debug\SBS.dll
 C:\Users\pegc837648\Desktop\Documentacion Cristian\Cristian documentos\Software_Business_Solutions_SBS\SBS\SBS\obj\Debug\SBS.pdb
+C:\Users\pegc837648\Desktop\Documentacion Cristian\Cristian documentos\Software_Business_Solutions_SBS\SBS\SBS\obj\Debug\SBS.csprojAssemblyReference.cache
