@@ -453,12 +453,17 @@ Contact Section
             </div>
 
             <div class="container-contact100-form-btn">
-                <button class="contact100-form-btn">
-                    <span>
-                        Enviar
-                        <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-                    </span>
-                </button>
+                <div id="div_btn_contacto">
+                    <button class="contact100-form-btn">
+
+                        <span>
+                            Enviar
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button>    
+                </div>
+                <span class="loader" id="spinner_load_contacto" role="status" aria-hidden="true"></span>
+                
             </div>
         </form>
     </div>
@@ -495,22 +500,24 @@ Contact Section
             <div class="contact100-form validate-form">
                 
                 <div class="wrap-input100 validate-input" id= "tuCorreo" data-validate="Tu correo electrónico es requerido">
-                    <input class="input100" id= "tuNombre" type="text" name="phone" placeholder="Ingresa tu correo electrónico">
+                    <input class="input100" id= "inputSuscribirseMail" type="text" name="mail" placeholder="Ingresa tu correo electrónico">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Tu nombre completo es requerido">
-                    <input class="input100" type="text" name="name" placeholder="Dinos tu nombre">
+                    <input id="inputSuscribirseNombre" class="input100" type="text" name="name" placeholder="Dinos tu nombre">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="container-contact100-form-btn">
-                    <button class="contact100-form-btn" onclick="javascript:Suscribirse();">
-                        <span>
-                            Suscribirse
-                            @*<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>*@
-                        </span>
-                    </button>
+                    <div id="div_btn_susbribir">
+                        <button id="btn_suscribirse" class="contact100-form-btn" onclick="onClickSuscribirse();">
+                            <span>
+                                Suscribirse
+                            </span>
+                        </button>
+                    </div>
+                    <span class="loader" id="spinner_load_suscribir" role="status" aria-hidden="true"></span>
                 </div>
             </div>
         </div>
@@ -544,6 +551,25 @@ Contact Section
 <!--======================
   Modals
   =====================-->
+
+<div class="modal fade" id="modalCorreoEnviado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalCorreoEnviadoLabel">Correo enviado</h4>
+                </div>
+
+                <div class="modal-body">
+                    <h2 id="modalCorreoEnviado-texto"></h2>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="contact100-form-btn" data-dismiss="modal"> Ok !</button>
+                </div>
+            </div>
+        </div>
+</div>
+
 <!--
   <div class="modal fade" id="myModalActualizaMonto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
