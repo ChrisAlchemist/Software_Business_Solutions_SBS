@@ -945,3 +945,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 #spinner_load_contacto {
     margin-left: 5%;
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

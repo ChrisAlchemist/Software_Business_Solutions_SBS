@@ -22,6 +22,17 @@
         })    
     })
 
+    $('.select100').each(function(){
+        $(this).on('blur', function(){
+            if($(this).val().trim() != "") {
+                $(this).addClass('has-val');
+            }
+            else {
+                $(this).removeClass('has-val');
+            }
+        })    
+    })
+
     /*==================================================================
     [ Validate ]*/
     
@@ -43,7 +54,7 @@
             esValido = false;
         }
 
-        if ($("#inputTelCelular").val().trim() == '' || $("#inputTelCelular").val() == null || $("#inputTelCelular").val() == 0) {
+        if ($("#inputTelCelular").val().trim() == '' || $("#inputTelCelular").val() == null || $("#inputTelCelular").val() == 0 || $("#selectTelRegion").val() == 0) {
             showValidate("#inputTelCelular");
             esValido = false;
         }
@@ -68,6 +79,8 @@
             esValido = false;
         }
 
+        
+
         return esValido;
     }
 
@@ -82,7 +95,7 @@
         datosCorreo.nombreNegocio = $("#inputNegocio").val();
         datosCorreo.mail = $("#inputMail").val();
         datosCorreo.tipoProyecto = $("#selectTipoProyecto option:selected").text();
-        datosCorreo.telCelular = $("#inputTelCelular").val();
+        datosCorreo.telCelular = $("#selectTelRegion option:selected").val() + $("#inputTelCelular").val();
         datosCorreo.nombreInteresado = $("#inputNombre").val();
         datosCorreo.presupuesto = $("#inputPresupuesto").val();
         datosCorreo.medioConctacto = $("#inputMedioContacto").val();
@@ -225,4 +238,32 @@ function LimpiarFromularios() {
     $("#inputNombre").val("");
     $("#inputPresupuesto").val("");
     $("#inputMedioContacto").val("");
+    $("#selectTelRegion").val(0);
+}
+
+//$(function () {
+//    $(document).on('change', '#selectTelRegion', function () {
+//        $("#inputTelCelular").focus();
+//        var value = $(this).val();
+//        $('#inputTelCelular').val(value);
+
+//    });
+//});
+
+function formatCurrency(num) {
+    num = num.toString().replace(/ |,/g, '');
+    num = num.toString().replace('$', '');
+    if (isNaN(num))
+        num = "0";
+    cents = Math.floor((num * 100 + 0.5) % 100);
+    num = Math.floor((num * 100 + 0.5) / 100).toString();
+    if (cents < 10)
+        cents = "0" + cents;
+    for (var i = 0; i < Math.floor((num.length - (1 + i)) / 3); i++)
+        num = num.substring(0, num.length - (4 * i + 3)) + ',' + num.substring(num.length - (4 * i + 3));
+    return ('$' + num + '.' + cents);
+}
+
+function validaNumeros(value) {
+    return value.match(/^\d+\.?\d{0,1}/);
 }
