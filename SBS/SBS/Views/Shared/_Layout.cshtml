@@ -5,6 +5,11 @@
     <link &lt;link rel="shortcut icon" href="~/img/icono/icono.png" type="image/png" /&gt;/>
     @*<link 1&lt;link rel="icon" href="~/img/icono/icono.png" type="image/png" /&gt;>*@
 
+    <script src="~/Efectos/CreativeLinkEffects/js/modernizr.custom.js"></script>
+    <link href="~/Efectos/CreativeLinkEffects/css/component.css" rel="stylesheet" />
+    <link href="~/Efectos/CreativeLinkEffects/css/demo.css" rel="stylesheet" />
+    <link href="~/Efectos/CreativeLinkEffects/css/normalize.css" rel="stylesheet" />
+
 
     <title>SBS</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -90,11 +95,54 @@
 
 
     </script>
+    <header id="header">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <!--<a href="#hero"><img id="menu-icon" src="img/logo/logo.png" alt="" title="" /></img></a>-->
+                <!-- Descomenta abajo si prefieres usar una imagen de texto -->
+
+                <h1><a href="@Url.Action("Inicio", "Inicio")"><img id="logo-sbs" src="/img/logo/logo.png" alt="" title="" /></img></a></h1>
+            </div>
+
+            
+            <nav class="cl-effect-12">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="@Url.Action("Inicio", "Inicio")">Inicio</a></li>
+
+                    <li><a href="@Url.Action("NuestrosServicios", "NuestrosServicios")">Servicios</a></li>
+                    <li><a href="@Url.Action("Portafolio", "Portafolio")">Portafolio</a></li>
+                    <li><a href="@Url.Action("Testimonios", "Testimonios")">Testimonios</a></li>
+                    <li><a href="@Url.Action("Equipo", "Equipo")">Equipo</a></li>
+                    <li><a href="@Url.Action("Contacto", "Contacto")">Contacto</a></li>
+                </ul>
+                    <!--<a href="#">Chatoyant</a>
+                    <a href="#">Ineffable</a>
+                    <a href="#">Efficiency</a>
+                    <a href="#">Mellifluous</a>
+                    <a href="#">Serendipity</a>-->
+            </nav>
+            
+            <!--
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="@Url.Action("Inicio", "Inicio")">Inicio</a></li>
+                    
+                    <li><a href="@Url.Action("NuestrosServicios", "NuestrosServicios")">Servicios</a></li>
+                    <li><a href="@Url.Action("Portafolio", "Portafolio")">Portafolio</a></li>
+                    <li><a href="@Url.Action("Testimonios", "Testimonios")">Testimonios</a></li>
+                    <li><a href="@Url.Action("Equipo", "Equipo")">Equipo</a></li>
+                    <li><a href="@Url.Action("Contacto", "Contacto")">Contacto</a></li>
+                </ul>
+            </nav>-->
+            <!-- #nav-menu-container -->
+        </div>
+    </header>
 
 </head>
-<body>
-    
-    <div >
+<body>    
+
+    <div>
         @RenderBody()
         <hr />
         <footer>
@@ -102,13 +150,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="copyright">                                
+                            <div class="copyright">
                                 &copy; Copyright <strong>SBS Software Business Solutions</strong>. All Rights Reserved
                             </div>
                             @*<div class="credits">
 
-                                Templates by <a href="http://www.servitecflhuaraz.com/">SBS</a>
-                            </div>*@
+                                    Templates by <a href="http://www.servitecflhuaraz.com/">SBS</a>
+                                </div>*@
                         </div>
                     </div>
                 </div>
@@ -117,7 +165,22 @@
     </div>
 
     @*@Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)*@
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)*@
 </body>
 </html>
+
+<script src="~/lib/jquery/jquery.min.js"></script>
+<script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="~/lib/superfish/hoverIntent.js"></script>
+<script src="~/lib/superfish/superfish.min.js"></script>
+<script src="~/lib/morphext/morphext.min.js"></script>
+<script src="~/lib/wow/wow.min.js"></script>
+<script src="~/lib/stickyjs/sticky.js"></script>
+<script src="~/lib/easing/easing.js"></script>
+
+<!-- Template Specisifc Custom Javascript File -->
+<script src="~/js/custom.js"></script>
+
+<script src="~/contactform/contactform.js"></script>
+<script src="~/js/main.js"></script>

@@ -1,0 +1,128 @@
+﻿
+@{
+    ViewBag.Title = "Contacto";
+}
+
+<!--==========================
+Contact Section
+============================-->
+<section id="contact">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Contactanos</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">Cotizamos tu proyecto, solo contactanos !</p>
+            </div>
+        </div>
+
+        <form class="contact100-form validate-form">
+            <div class="col-md-6">
+                <div class="wrap-input100 validate-input" data-validate="El nombre de tu negocio es requerido">
+                    <input id="inputNegocio" class="input100" type="text" name="busines-name" placeholder="¿Cual es el nombre de tu negocio?">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Una cuenta de correo es requerida: ex@abc.xyz">
+                    <input id="inputMail" class="input100" type="text" name="email" placeholder="¿Cual es tu correo electrónico?">
+                    <span class="focus-input100"></span>
+                </div>
+
+
+                <div class="wrap-select100 validate-select" data-validate="Es necesario que seleciones un tipo de proyecto">
+                    <select id="selectTipoProyecto" class="select100" id="tipoCotizacion">
+                        <option value="0" disabled selected>Tipo de proyecto a cotizar</option>
+                        <option value="1">Sitio Web</option>
+                        <option value="2">App Móbil</option>
+                        <option value="3">Aplicación Windows</option>
+                    </select>
+                    <span class="focus-select100"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row" s>
+                    <div class="col-md-4" style="margin-top:0.8em; margin-right:-2em">
+                        <select id="selectTelRegion" class="select100">
+                            <option value="0" disabled selected>Región</option>
+                            <option value="+54">ARG +54</option>
+                            <option value="+591">BOL +591</option>
+                            <option value="+55">BRA +55</option>
+                            <option value="+56">CHL +56</option>
+                            <option value="+593">ECU +593 </option>
+                            <option value="+502">GTM +502</option>
+                            <option value="+52">MEX +52</option>
+                            <option value="+507">PAN +507</option>
+                            <option value="+51">PER +51</option>
+                            <option value="+598">URY +598</option>
+                            <option value="+58">VEN +58</option>
+                        </select>
+                    </div>
+                    <div class="col-md-8">
+
+                        <div class="wrap-input100 validate-input" data-validate="Tu número de telefono no es correcto.">
+                            <input id="inputTelCelular" class="input100" type=number name="phone" placeholder="¿Cual es tu número de teléfono?">
+                            <span class="focus-input100"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Tu nombre completo es requerido">
+                    <input id="inputNombre" class="input100" type="text" name="name" placeholder="¿Cual es tu nombre completo?">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Tu número de telefono es requerido">
+                    <input id="inputPresupuesto" class="input100" type="text" name="phone" placeholder="¿Cual es tu presupuesto para el proyecto?" onblur="this.value=formatCurrency(this.value);" onkeypress="this.value = validaNumeros(this.value)">
+                    <span class="focus-input100"></span>
+                </div>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Menciona algún medio por el cual nos has encontrado">
+                <input id="inputMedioContacto" class="input100" name="message" placeholder="¿Cómo nos encontraste?">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="container-contact100-form-btn">
+                <div id="div_btn_contacto">
+                    <button class="contact100-form-btn">
+
+                        <span>
+                            Enviar
+
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+                <span class="loader" id="spinner_load_contacto" role="status" aria-hidden="true"></span>
+
+            </div>
+        </form>
+    </div>
+</section>
+
+<!--======================
+  Modals
+  =====================-->
+
+<div class="modal fade" id="modalCorreoEnviado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="modalCorreoEnviadoLabel">Correo enviado</h4>
+            </div>
+
+            <div class="modal-body">
+                <h2 id="modalCorreoEnviado-texto"></h2>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="contact100-form-btn" data-dismiss="modal"> Ok !</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+
+

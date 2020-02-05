@@ -9,14 +9,17 @@ using System.Net.Mail;
 using System.Web.Configuration;
 using System.IO;
 using System.Net.Mime;
+using System.Configuration;
 
 namespace SBS.Controllers.EnviarCorreo
 {
     public class CorreoController : Controller
     {
-        private string correoProveedor = "cristian.perez.garcia.54@gmail.com";
-        private string socio1 = "cristian.perez.garcia.54@gmail.com", socio2 = "ing.sc.montero@gmail.com", socio3 = "oscarcztec@gmail.com";
-        private string contrasenaProveedor = "ISC_chris_54";
+        //ConfigurationManager.AppSettings["urlRegistraClabe"].ToString();
+        //private string correoProveedor = "cristian.perez.garcia.54@gmail.com";
+        private string correoProveedor = ConfigurationManager.AppSettings["correoProveedor"].ToString();
+        private string socio1 = ConfigurationManager.AppSettings["socio1"].ToString(), socio2 = ConfigurationManager.AppSettings["socio2"].ToString(), socio3 = ConfigurationManager.AppSettings["socio3"].ToString();
+        private string contrasenaProveedor = ConfigurationManager.AppSettings["contrasenaProveedor"].ToString();
         // GET: Correo
         public ActionResult Index()
         {

@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "NuestrosServicios";
+}
+
+<!--==========================
+Services Section
+============================-->
+<section id="services">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">NUESTROS SERVICIOS</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4 service-item">
+                    <div class="service-icon"><i class="fa fa-code"></i></div>
+                    <h4 class="service-title"><a href="">Desarrollo Web</a></h4>
+                    <p class="service-description">Enfocados en crear sitios web de calidad con el fin de automatizar las necesidades de tu negocio.</p>
+                </div>
+                <div class="col-md-4 service-item">
+                    <div class="service-icon"><i class="fa fa-desktop"></i></div>
+                    <h4 class="service-title"><a href="">Apps Windows</a></h4>
+                    <p class="service-description">Creamos aplicaciones de escritorio windows orientados a la administración de tu negocio.</p>
+                </div>
+                <div class="col-md-4 service-item">
+                    <div id="service-mobile" class="service-icon"><i id="icon-mobile" class="fas fa-mobile-alt"></i></div>
+                    <h4 class="service-title"><a href="">Apps</a></h4>
+                    <p class="service-description">Hoy en dia mas del 75% de la población a nivel mundial usan un smart phone, no te quedes atras creamos la app ideal para tu negocio.</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-4 service-item">
+                    <div class="service-icon"><i class="fa fa-laptop"></i></div>
+                    <h4 class="service-title"><a href="">IOS</a></h4>
+                    <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+                <div class="col-md-4 service-item">
+                    <div class="service-icon"><i class="fa fa-road"></i></div>
+                    <h4 class="service-title"><a href="">Diseño web</a></h4>
+                    <p class="service-description">¿Necesitas un sitio informativo? nosotros diseñamos el marketing digital de tu negocio</p>
+                </div>
+                <div class="col-md-4 service-item">
+                    <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
+                    <h4 class="service-title"><a href="">Eiusmod Tempor</a></h4>
+                    <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--==========================
+Subscrbe Section
+============================-->
+<section id="subscribe">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-8">
+                <h3 class="subscribe-title">Recibe actualizaciones</h3>
+                <p class="subscribe-text">Unete a nuestra comunidad y no te pierdas lo nuevo en nuestros servicios, recibe información sobre nuestros nuestras actualizaciones.</p>
+            </div>
+            <div class="col-md-4 subscribe-btn-container">
+                <a class="subscribe-btn" href="javascript:mostrarSuscribirse()">Suscribirse</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--======================
+    Modals
+    =====================-->
+
+
+
+
+<div class="modal fade" id="modalSuscribirse" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="contact100-form validate-form">
+
+                <div class="wrap-input100 validate-input" id="tuCorreo" data-validate="Tu correo electrónico es requerido">
+                    <input class="input100" id="inputSuscribirseMail" type="text" name="mail" placeholder="Ingresa tu correo electrónico">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Tu nombre completo es requerido">
+                    <input id="inputSuscribirseNombre" class="input100" type="text" name="name" placeholder="Dinos tu nombre">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <div id="div_btn_susbribir">
+                        <button id="btn_suscribirse" class="contact100-form-btn" onclick="onClickSuscribirse();">
+                            <span>
+                                Suscribirse
+                            </span>
+                        </button>
+                    </div>
+                    <span class="loader" id="spinner_load_suscribir" role="status" aria-hidden="true"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -200,10 +200,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-#header #logo img {
+#header #logo {
   padding: 0;
   margin: 0;
   max-height: 50px;
+}
+#logo img {
+    margin-top: -26%;
+    margin-left: -5%;
+    width: 80%;
+    height:80%;
 }
 
 @media (max-width: 768px) {
@@ -301,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 12px;
   outline: none;
 }
 

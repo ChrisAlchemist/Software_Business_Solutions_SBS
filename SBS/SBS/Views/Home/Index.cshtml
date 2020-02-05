@@ -3,6 +3,9 @@
 
 }
 <link 1&lt;link rel="icon" href="~/img/icono/icono.png" type="image/png" /&gt;>
+<link href="~/Efectos/CreativeLinkEffects/css/component.css" rel="stylesheet" />
+<link href="~/Efectos/CreativeLinkEffects/css/demo.css" rel="stylesheet" />
+<link href="~/Efectos/CreativeLinkEffects/css/normalize.css" rel="stylesheet" />
 <div id="preloader"></div>
 
 <!--==========================
@@ -28,13 +31,11 @@
 <!--==========================
 Sección de encabezado
 ============================-->
-<header id="header">
+<!--<header id="header">
     <div class="container">
 
         <div id="logo" class="pull-left">
-            <!--<a href="#hero"><img id="menu-icon" src="img/logo/logo.png" alt="" title="" /></img></a>-->
-            <!-- Descomenta abajo si prefieres usar una imagen de texto -->
-
+            
 
             <h1><a href="#hero"><img id="logo-sbs" src="img/logo/logo.png" alt="" title="" /></img></a></h1>
         </div>
@@ -70,9 +71,9 @@ Sección de encabezado
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
-        <!-- #nav-menu-container -->
+        
     </div>
-</header>
+</header>-->
 <!-- #header -->
 <!--==========================
 About Section
@@ -174,7 +175,7 @@ Subscrbe Section
                 <p class="subscribe-text">Unete a nuestra comunidad y no te pierdas lo nuevo en nuestros servicios, recibe información sobre nuestros nuestras actualizaciones.</p>
             </div>
             <div class="col-md-4 subscribe-btn-container">
-                <a class="subscribe-btn"  href="javascript:mostrarSuscribirse()">Suscribirse</a>
+                <a class="subscribe-btn" href="javascript:mostrarSuscribirse()">Suscribirse</a>
             </div>
         </div>
     </div>
@@ -377,20 +378,6 @@ Team Section
                 </div>
             </div>
 
-            <!--<div class="col-md-3">
-              <div class="member">
-                <div class="pic"><img src="img/team-4.jpg" alt=""></div>
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <div class="social">
-                  <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a href="" target="_blank"><i class="fa fa-google-plus"></i></a>
-                  <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>-->
-
         </div>
     </div>
 </section>
@@ -432,7 +419,7 @@ Contact Section
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="row"s>
+                <div class="row" s>
                     <div class="col-md-4" style="margin-top:0.8em; margin-right:-2em">
                         <select id="selectTelRegion" class="select100">
                             <option value="0" disabled selected>Región</option>
@@ -452,7 +439,7 @@ Contact Section
                     <div class="col-md-8">
 
                         <div class="wrap-input100 validate-input" data-validate="Tu número de telefono no es correcto.">
-                            <input id="inputTelCelular" class="input100" type=number name="phone" placeholder="¿Cual es tu número de teléfono?" >
+                            <input id="inputTelCelular" class="input100" type=number name="phone" placeholder="¿Cual es tu número de teléfono?">
                             <span class="focus-input100"></span>
                         </div>
                     </div>
@@ -468,7 +455,7 @@ Contact Section
                     <span class="focus-input100"></span>
                 </div>
             </div>
-            <div class="wrap-input100 validate-input" data-validate="Menciona algún medio por el cual nos has encontrado">                
+            <div class="wrap-input100 validate-input" data-validate="Menciona algún medio por el cual nos has encontrado">
                 <input id="inputMedioContacto" class="input100" name="message" placeholder="¿Cómo nos encontraste?">
                 <span class="focus-input100"></span>
             </div>
@@ -479,13 +466,13 @@ Contact Section
 
                         <span>
                             Enviar
-                            
+
                             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                         </span>
-                    </button>    
+                    </button>
                 </div>
                 <span class="loader" id="spinner_load_contacto" role="status" aria-hidden="true"></span>
-                
+
             </div>
         </form>
     </div>
@@ -498,31 +485,15 @@ Contact Section
     =====================-->
 
 
-<div class="modal fade" id="modalDescripcionPortafolio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Descripción</h4>
-            </div>
-            <div id="contenidoDescripcionPortafolio" class="modal-body">
-                <img id="imagenesPortafolio" width='100%' height='100%' />
-                <p id="descripcionPortafolio"></p>
-            </div>
-            <div class="modal-footer">
-                <!--<button onclick="ActualizarMonto()" type="button" class="btn btn-info"> Aceptar</button>-->
-                <button type="button" class="btn btn-info" data-dismiss="modal"> Aceptar</button>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 <div class="modal fade" id="modalSuscribirse" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="contact100-form validate-form">
-                
-                <div class="wrap-input100 validate-input" id= "tuCorreo" data-validate="Tu correo electrónico es requerido">
-                    <input class="input100" id= "inputSuscribirseMail" type="text" name="mail" placeholder="Ingresa tu correo electrónico">
+
+                <div class="wrap-input100 validate-input" id="tuCorreo" data-validate="Tu correo electrónico es requerido">
+                    <input class="input100" id="inputSuscribirseMail" type="text" name="mail" placeholder="Ingresa tu correo electrónico">
                     <span class="focus-input100"></span>
                 </div>
 
@@ -546,27 +517,6 @@ Contact Section
     </div>
 </div>
 
-<!---modals-->
-<!--==========================
-  Footer
-============================-->
-@*<footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="copyright">
-                        &copy; Copyright <strong>SystemDNS Theme</strong>. All Rights Reserved
-                    </div>
-                    <div class="credits">
-
-                        Templates by <a href="http://www.servitecflhuaraz.com/">SystemDNS</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>*@
-<!-- #footer -->
-
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 
@@ -577,42 +527,21 @@ Contact Section
 <div class="modal fade" id="modalCorreoEnviado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="modalCorreoEnviadoLabel">Correo enviado</h4>
-                </div>
-
-                <div class="modal-body">
-                    <h2 id="modalCorreoEnviado-texto"></h2>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="contact100-form-btn" data-dismiss="modal"> Ok !</button>
-                </div>
-            </div>
-        </div>
-</div>
-
-<!--
-  <div class="modal fade" id="myModalActualizaMonto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">ESTATUS DE LA ACCIÓN</h4>
+                <h4 class="modal-title" id="modalCorreoEnviadoLabel">Correo enviado</h4>
             </div>
-            <div class="modal-body">
-                <p id="mensaje-actualizaMonto"></p>
-            </div>
-            <div class="modal-footer">
-                <button onclick="ActualizarMonto()" type="button" class="btn btn-info"> Aceptar</button>
 
-                <button type="button" class="btn btn-info" data-dismiss="modal"> Cancelar</button>
+            <div class="modal-body">
+                <h2 id="modalCorreoEnviado-texto"></h2>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="contact100-form-btn" data-dismiss="modal"> Ok !</button>
             </div>
         </div>
     </div>
 </div>
--->
-<!---modals-->
-<!-- Required JavaScript Libraries -->
+
 <script src="~/lib/jquery/jquery.min.js"></script>
 <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="~/lib/superfish/hoverIntent.js"></script>
@@ -627,3 +556,4 @@ Contact Section
 
 <script src="~/contactform/contactform.js"></script>
 <script src="~/js/main.js"></script>
+<script src="~/Efectos/CreativeLinkEffects/js/modernizr.custom.js"></script>
