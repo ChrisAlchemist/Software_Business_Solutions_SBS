@@ -176,9 +176,9 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #111;
-  padding: 20px 0;
-  height: 90px;
+    background: #fff;    
+    padding: 20px 0;
+    height: 90px;
 }
 
 #header #logo {
@@ -196,9 +196,9 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-#header #logo h1 a, #header #logo h1 a:hover {
-  color: #fff;
-}
+    #header #logo h1 a, #header #logo h1 a:hover {
+        color: #fff;        
+    }
 
 #header #logo {
   padding: 0;
@@ -206,10 +206,11 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 50px;
 }
 #logo img {
-    margin-top: -26%;
-    margin-left: -5%;
-    width: 80%;
-    height:80%;
+    margin-top: -6%;
+    margin-left: 15%;
+    width: 55%;
+    height: 55%;
+    transition: all .2s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -219,13 +220,20 @@ h1, h2, h3, h4, h5, h6 {
   #header #logo h1 {
     font-size: 26px;
   }
-  #header #logo img {
+#header #logo img {
+        
     max-height: 40px;
-  }
+}
 }
 
 .is-sticky #header {
-  background: rgba(0, 0, 0, 0.85);
+  background: #fff;  
+}
+
+.is-sticky #logo #logo-sbs {
+    width: 46%;
+    height: 46%;
+    transition: all .3s ease-in-out;
 }
 
 /*--------------------------------------------------------------
@@ -304,7 +312,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 15px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: #111;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 12px;
