@@ -202,6 +202,7 @@
     <Content Include="img\client-2.jpg" />
     <Content Include="img\hero-bg.jpg" />
     <Content Include="img\icono\icono.png" />
+    <Content Include="img\icono\icono_01.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\logo\1.png" />
     <Content Include="img\logo\2.png" />
@@ -215,6 +216,7 @@
     <Content Include="img\logo\logo22.png" />
     <Content Include="img\logo\logo3.png" />
     <Content Include="img\logo\logo4.png" />
+    <Content Include="img\logo\SDS_01.png" />
     <Content Include="img\logo\SDS_1.jpg" />
     <Content Include="img\logo\SDS_2.jpg" />
     <Content Include="img\logo\SDS_3.jpg" />
@@ -237,6 +239,10 @@
     <Content Include="img\team-2.jpg" />
     <Content Include="img\team-3.jpg" />
     <Content Include="img\team-4.jpg" />
+    <Content Include="img\Tecnologias\bootstrap.jpg" />
+    <Content Include="img\Tecnologias\Csharp.png" />
+    <Content Include="img\Tecnologias\html.png" />
+    <Content Include="img\Tecnologias\ssql.png" />
     <Content Include="img\work\1.jpg" />
     <Content Include="img\work\2.jpg" />
     <Content Include="img\work\3.jpg" />
