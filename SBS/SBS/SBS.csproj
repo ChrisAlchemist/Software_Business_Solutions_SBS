@@ -196,6 +196,12 @@
     <Content Include="Efectos\StackMotionHoverEffects\index.html" />
     <Content Include="Efectos\StackMotionHoverEffects\js\anime.min.js" />
     <Content Include="Efectos\StackMotionHoverEffects\js\main.js" />
+    <Content Include="Estilos\Contacto.css" />
+    <Content Include="Estilos\Equipo.css" />
+    <Content Include="Estilos\Inicio.css" />
+    <Content Include="Estilos\NuestrosServicios.css" />
+    <Content Include="Estilos\Portafolio.css" />
+    <Content Include="Estilos\Testimonios.css" />
     <Content Include="img\---hero-bg.jpg" />
     <Content Include="img\about-img.jpg" />
     <Content Include="img\client-1.jpg" />
@@ -404,7 +410,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Estilos\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Correo\" />
   </ItemGroup>

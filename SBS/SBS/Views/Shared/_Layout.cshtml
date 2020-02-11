@@ -106,15 +106,15 @@
             </div>
 
             <div>
-            <nav class="cl-effect-12">
+            <nav  id="nav-menu-container" class="cl-effect-12">
                 <ul class="nav-menu">
-                    <li class="menu-active"><a href="@Url.Action("Inicio", "Inicio")">Inicio</a></li>
+                    <li id="inicio-menu"><a href="@Url.Action("Inicio", "Inicio")">Inicio</a></li>
 
-                    <li><a href="@Url.Action("NuestrosServicios", "NuestrosServicios")">Servicios</a></li>
-                    <li><a href="@Url.Action("Portafolio", "Portafolio")">Portafolio</a></li>
-                    <li><a href="@Url.Action("Testimonios", "Testimonios")">Testimonios</a></li>
-                    <li><a href="@Url.Action("Equipo", "Equipo")">Equipo</a></li>
-                    <li><a href="@Url.Action("Contacto", "Contacto")">Contacto</a></li>
+                    <li id="servicios-menu"><a href="@Url.Action("NuestrosServicios", "NuestrosServicios")">Servicios</a></li>
+                    <li id="portafolio-menu"><a href="@Url.Action("Portafolio", "Portafolio")">Portafolio</a></li>
+                    <li id="testimonios-menu"><a href="@Url.Action("Testimonios", "Testimonios")">Testimonios</a></li>
+                    <li id="equipo-menu"><a href="@Url.Action("Equipo", "Equipo")">Equipo</a></li>
+                    <li id="contacto-menu"><a href="@Url.Action("Contacto", "Contacto")">Contacto</a></li>
                 </ul>
                     <!--<a href="#">Chatoyant</a>
                     <a href="#">Ineffable</a>
@@ -139,20 +139,17 @@
             <!-- #nav-menu-container -->
         </div>
     </header>
-
-</head>
 <body>    
 
     <div>
         @RenderBody()
         <hr />
-        <footer>
             <footer id="footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="copyright">
-                                &copy; Copyright <strong>SBS Software Business Solutions</strong>. All Rights Reserved
+                                &copy; Copyright <strong>SDS Software Business Solutions</strong>. All Rights Reserved
                             </div>
                             @*<div class="credits">
 
@@ -161,8 +158,7 @@
                         </div>
                     </div>
                 </div>
-            </footer>
-        </footer>
+            </footer>        
     </div>
 
     @*@Scripts.Render("~/bundles/jquery")
