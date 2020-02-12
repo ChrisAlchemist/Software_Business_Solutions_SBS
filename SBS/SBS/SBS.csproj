@@ -300,6 +300,7 @@
     <Content Include="js\custom.js" />
     <Content Include="js\main.js" />
     <Content Include="js\map-custom.js" />
+    <Content Include="js\NuestrosServicios.js" />
     <Content Include="lib\animate-css\animate.min.css" />
     <Content Include="lib\bootstrap\css\bootstrap-theme.css" />
     <Content Include="lib\bootstrap\css\bootstrap-theme.min.css" />
