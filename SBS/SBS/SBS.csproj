@@ -245,9 +245,13 @@
     <Content Include="img\team-2.jpg" />
     <Content Include="img\team-3.jpg" />
     <Content Include="img\team-4.jpg" />
+    <Content Include="img\Tecnologias\android.png" />
     <Content Include="img\Tecnologias\bootstrap.jpg" />
+    <Content Include="img\Tecnologias\bootstrap.png" />
     <Content Include="img\Tecnologias\Csharp.png" />
     <Content Include="img\Tecnologias\html.png" />
+    <Content Include="img\Tecnologias\ionic.png" />
+    <Content Include="img\Tecnologias\javascript.png" />
     <Content Include="img\Tecnologias\ssql.png" />
     <Content Include="img\work\1.jpg" />
     <Content Include="img\work\2.jpg" />

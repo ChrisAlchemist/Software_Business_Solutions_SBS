@@ -102,47 +102,97 @@
         }
 
 
-        /*Carrusel */
-.MultiCarousel {
-    float: left;
-    overflow: hidden;
-    padding: 15px;
-    width: 100%;
-    position: relative;
+        
+/***Elementos de slider en movimiento***/
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
 }
 
-    .MultiCarousel .MultiCarousel-inner {
-        transition: 1s ease all;
-        float: left;
-    }
+.slider {
+    height: 100px;
+    margin: auto;
+    
+    /*overflow: hidden; */
+    overflow: hidden;
+    width: 100%;
+}
 
-    .MultiCarousel .MultiCarousel-inner .item {
-        float: left;
-    }
-
-        .MultiCarousel .MultiCarousel-inner .item > div {
-            text-align: center;
-            padding: 10px;
-            margin: 10px;
-            background: #f1f1f1;
-            color: #666;
-        }
-
-    .MultiCarousel .leftLst, .MultiCarousel .rightLst {
+    .slider::before, .slider::after {
+        background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+        content: "";
+        height: 100px;
         position: absolute;
-        border-radius: 50%;
-        top: calc(50% - 20px);
+        width: 200px;
+        z-index: 2;
     }
 
-    .MultiCarousel .leftLst {
-        left: 0;
-    }
-
-    .MultiCarousel .rightLst {
+    .slider::after {
         right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
     }
 
-        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over {
-            pointer-events: none;
-            background: #ccc;
-        }
+    .slider::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slider .slide-track {
+        animation: scroll 40s linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+    }
+
+    .slider .slide {
+        height: 100%;
+        width: 100%;
+        margin-right:-2%;
+    }
+
+
+    /**Tamaño imagenes carrusel**/
+
+#tecnologia-sql {
+    width:30%;
+    height:30%;
+}
+
+
+#tecnologia-html {
+    width :40%;
+    height:40%;
+}
+
+#tecnologia-bootstrap {
+    width :30%;
+    height:30%;
+}
+
+#tecnologia-csharp{
+    margin-top: -8%;
+    width:40%;
+    height:40%;
+
+}
+
+#tecnologia-ionic {
+    width :55%; 
+    height:55%;
+}
+
+#tecnologia-javascript {
+    width :24%;
+    height:24%;
+}
+
+#tecnologia-android {
+    width :16%;
+    height:16%;
+}
