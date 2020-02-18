@@ -11,47 +11,68 @@
     padding: 80px 0 60px 0;
 }
 
-    #services .service-item {
-        margin-bottom: 20px;
-    }
+#services .service-item {
+    margin-bottom: 20px;
+}
 
     #services .service-icon {
-        float: left;
-        background: #EE8726;
-        padding: 16px;
-        border-radius: 50%;
-        transition: 0.5s;
-        border: 1px solid #EE8726;
+        /*color: rgba(1, 1, 1, 0.17);*/
+        color:black;
+        transition: 0.7s;
     }
 
-        #services .service-icon i {
-            color: #fff;
-            font-size: 24px;
-        }
+#services .service-icon i {    
+    font-size: 4em;
+}
 
-    #services .service-item:hover .service-icon {
-        background: #fff;
+
+.wrap-item {
+    border-radius: 10%;
+    padding: 10%;
+    transition: 0.7s;
+}
+
+.wrap-item h3 {
+    color: rgb(238, 135, 38);
+    transition: 0.7s;
+}
+
+.wrap-item:hover {
+    /*background-color: rgb(238, 135, 38);*/
+    /*background-color: rgba(1, 1, 1, 0.17);*/
+    transition: 0.7s;
+}
+.wrap-item:hover i {
+    color: rgba(238, 135, 38);
+    transition: 0.7s;
+}
+.wrap-item:hover h3 {
+    color: black;
+    transition: 0.7s;
+}
+    
+
+/*#services .service-item:hover .service-icon i {
+    color: black;
+    transition: 0.5s;
+    
+}*/
+
+#services .service-title {
+    margin-left: 80px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+    #services .service-title a {
+        color: #111;
     }
 
-        #services .service-item:hover .service-icon i {
-            color: #EE8726;
-        }
-
-    #services .service-title {
-        margin-left: 80px;
-        font-weight: 700;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-    }
-
-        #services .service-title a {
-            color: #111;
-        }
-
-    #services .service-description {
-        margin-left: 80px;
-        line-height: 24px;
-    }
+#services .service-description {
+    margin-left: 80px;
+    line-height: 24px;
+}
 
 /* Subscribe Section
 --------------------------------*/
@@ -66,40 +87,40 @@
     padding: 80px 0;
 }
 
-    #subscribe .subscribe-title {
-        color: #fff;
-        font-size: 28px;
-        font-weight: 700;
-    }
+#subscribe .subscribe-title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
 
-    #subscribe .subscribe-text {
-        color: #fff;
-    }
+#subscribe .subscribe-text {
+    color: #fff;
+}
 
-    #subscribe .subscribe-btn-container {
-        text-align: center;
-        padding-top: 20px;
-    }
+#subscribe .subscribe-btn-container {
+    text-align: center;
+    padding-top: 20px;
+}
 
-    #subscribe .subscribe-btn {
-        font-family: "Raleway", sans-serif;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: 1px;
-        display: inline-block;
-        padding: 8px 20px;
-        border-radius: 2px;
-        transition: 0.5s;
-        margin: 10px;
-        border: 2px solid #fff;
-        color: #fff;
-    }
+#subscribe .subscribe-btn {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
 
-        #subscribe .subscribe-btn:hover {
-            background: #EE8726;
-            border: 2px solid #EE8726;
-        }
+#subscribe .subscribe-btn:hover {
+    background: #EE8726;
+    border: 2px solid #EE8726;
+}
 
 
         
@@ -124,40 +145,40 @@
     width: 100%;
 }
 
-    .slider::before, .slider::after {
-        background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-        content: "";
-        height: 100px;
-        position: absolute;
-        width: 200px;
-        z-index: 2;
-    }
+.slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
 
-    .slider::after {
-        right: 0;
-        top: 0;
-        transform: rotateZ(180deg);
-    }
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
 
-    .slider::before {
-        left: 0;
-        top: 0;
-    }
+.slider::before {
+    left: 0;
+    top: 0;
+}
 
-    .slider .slide-track {
-        animation: scroll 40s linear infinite;
-        display: flex;
-        width: calc(250px * 14);
-    }
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
 
-    .slider .slide {
-        height: 100%;
-        width: 100%;
-        margin-right:-2%;
-    }
+.slider .slide {
+    height: 100%;
+    width: 100%;
+    margin-right:-2%;
+}
 
 
-    /**Tamaño imagenes carrusel**/
+/**Tamaño imagenes carrusel**/
 
 #tecnologia-sql {
     width:30%;
