@@ -106,29 +106,29 @@
             </div>
 
             <div>
-            <nav  id="nav-menu-container" class="cl-effect-13">
-                <ul class="nav-menu">
-                    <li id="inicio-menu"><a href="@Url.Action("Inicio", "Inicio")">Inicio</a></li>
+                <nav id="nav-menu-container" class="cl-effect-13">
+                    <ul class="nav-menu">
+                        <li id="inicio-menu"><a href="@Url.Action("Inicio", "Inicio")">Inicio</a></li>
 
-                    <li id="servicios-menu"><a href="@Url.Action("NuestrosServicios", "NuestrosServicios")">Servicios</a></li>
-                    <li id="portafolio-menu"><a href="@Url.Action("Portafolio", "Portafolio")">Portafolio</a></li>
-                    <li id="testimonios-menu"><a href="@Url.Action("Testimonios", "Testimonios")">Testimonios</a></li>
-                    <li id="equipo-menu"><a href="@Url.Action("Equipo", "Equipo")">Equipo</a></li>
-                    <li id="contacto-menu"><a href="@Url.Action("Contacto", "Contacto")">Contacto</a></li>
-                </ul>
+                        <li id="servicios-menu"><a href="@Url.Action("NuestrosServicios", "NuestrosServicios")">Servicios</a></li>
+                        <li id="portafolio-menu"><a href="@Url.Action("Portafolio", "Portafolio")">Portafolio</a></li>
+                        <li id="testimonios-menu"><a href="@Url.Action("Testimonios", "Testimonios")">Testimonios</a></li>
+                        <li id="equipo-menu"><a href="@Url.Action("Equipo", "Equipo")">Equipo</a></li>
+                        <li id="contacto-menu"><a href="@Url.Action("Contacto", "Contacto")">Contacto</a></li>
+                    </ul>
                     <!--<a href="#">Chatoyant</a>
                     <a href="#">Ineffable</a>
                     <a href="#">Efficiency</a>
                     <a href="#">Mellifluous</a>
                     <a href="#">Serendipity</a>-->
-            </nav>
-                </div>
-            
+                </nav>
+            </div>
+
             <!--
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
                     <li class="menu-active"><a href="@Url.Action("Inicio", "Inicio")">Inicio</a></li>
-                    
+
                     <li><a href="@Url.Action("NuestrosServicios", "NuestrosServicios")">Servicios</a></li>
                     <li><a href="@Url.Action("Portafolio", "Portafolio")">Portafolio</a></li>
                     <li><a href="@Url.Action("Testimonios", "Testimonios")">Testimonios</a></li>
@@ -139,11 +139,11 @@
             <!-- #nav-menu-container -->
         </div>
     </header>
-<body>    
+    <body>
 
-    <div>
-        @RenderBody()
-        <hr />
+        <div>
+            @RenderBody()
+            <hr />
             <footer id="footer">
                 <div class="container">
                     <div class="row">
@@ -158,13 +158,13 @@
                         </div>
                     </div>
                 </div>
-            </footer>        
-    </div>
+            </footer>
+        </div>
 
-    @*@Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)*@
-</body>
+        @*@Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)*@
+    </body>
 </html>
 
 <script src="~/lib/jquery/jquery.min.js"></script>
@@ -181,3 +181,7 @@
 
 <script src="~/contactform/contactform.js"></script>
 <script src="~/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>

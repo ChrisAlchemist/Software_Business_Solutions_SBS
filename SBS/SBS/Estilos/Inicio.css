@@ -2,6 +2,107 @@
     color: #EE8726;
 }
 
+
+/*--------------------------------------------------------------
+# Welcome
+--------------------------------------------------------------*/
+#hero {
+    display: table;
+    width: 100%;
+    height: 70vh;
+    background: url(../img/hero-bg.jpg) top center fixed;
+    background-size: cover;
+}
+
+    #hero .hero-logo {
+        margin: 0px;
+    }
+
+        #hero .hero-logo img {
+            max-width: 100%;
+        }
+
+    #hero .hero-container {
+        background: rgba(0, 0, 0, 0.6);
+        display: table-cell;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    #hero h1 {
+        
+        font-weight: 700;
+        line-height: 48px;
+        text-transform: uppercase;
+        color: #fff;        
+    }
+
+@media (max-width: 1000px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+#hero h2 {
+    color: #999;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1000px) {
+    #hero h2 {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+
+        #hero h2 .rotating {
+            display: block;
+        }
+}
+
+#hero .rotating > .animated {
+    display: inline-block;
+}
+
+#hero .actions a {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+#hero .btn-get-started {
+    background: #EE8726;
+    border: 2px solid #EE8726;
+    color: #fff;
+}
+
+    #hero .btn-get-started:hover {
+        background: none;
+        border: 2px solid #fff;
+        color: #fff;
+    }
+
+#hero .btn-services {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+    #hero .btn-services:hover {
+        background: #EE8726;
+        border: 2px solid #EE8726;
+    }
+
+
 /* Get Started Section
 --------------------------------*/
 #about {
@@ -9,9 +110,9 @@
     padding: 80px 0;
 }
 
-    #about .about-container {
-        /*background: url(../img/about-img.jpg) left top no-repeat;*/
-    }
+#about .about-container {
+    /*background: url(../img/about-img.jpg) left top no-repeat;*/
+}
 
 .about-container img {
     width: 50%;
@@ -35,6 +136,581 @@
     line-height: 26px;
 }
 
-    #about .about-text:last-child {
-        margin-bottom: 0;
+#about .about-text:last-child {
+    margin-bottom: 0;
+}
+
+/***Letras Codigo***/
+#inicio-opciones{
+    margin-top:15%;
+}
+
+.wrapper {
+    position: absolute;
+    margin-top:10%;
+    left: 50%;
+    width: 90%;
+    font-size: 0;
+    transform: translate(-50%);
+}
+
+
+
+.letter {
+    width: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #eee;
+}
+
+    .letter:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        word-break: break-all;
+        background-color: #1d1f20;
     }
+
+    .letter:nth-child(1):before {
+        content: "3279854106";
+        margin-top: -96px;
+        animation-name: letter1;
+        animation-duration: 2.72s;
+        animation-delay: 0.15s;
+        animation-fill-mode: forwards;
+    }
+
+@keyframes letter1 {
+    from {
+        margin-top: -96px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(2):before {
+    content: "7158064239";
+    margin-top: -120px;
+    animation-name: letter2;
+    animation-duration: 0.2333333333s;
+    animation-delay: 0.93s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter2 {
+    from {
+        margin-top: -120px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(3):before {
+    content: "9156742083";
+    margin-top: -72px;
+    animation-name: letter3;
+    animation-duration: 1.32s;
+    animation-delay: 0.56s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter3 {
+    from {
+        margin-top: -72px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(4):before {
+    content: "0983174625";
+    margin-top: 0px;
+    animation-name: letter4;
+    animation-duration: 0s;
+    animation-delay: 0.53s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter4 {
+    from {
+        margin-top: 0px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(5):before {
+    content: "1976283054";
+    margin-top: -120px;
+    animation-name: letter5;
+    animation-duration: 0.7333333333s;
+    animation-delay: 0.78s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter5 {
+    from {
+        margin-top: -120px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(6):before {
+    content: "7680349152";
+    margin-top: -216px;
+    animation-name: letter6;
+    animation-duration: 1.188s;
+    animation-delay: 0.67s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter6 {
+    from {
+        margin-top: -216px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(7):before {
+    content: "0367195482";
+    margin-top: -144px;
+    animation-name: letter7;
+    animation-duration: 2.4s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter7 {
+    from {
+        margin-top: -144px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(8):before {
+    content: "2460591783";
+    margin-top: -120px;
+    animation-name: letter8;
+    animation-duration: 3.0333333333s;
+    animation-delay: 0.09s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter8 {
+    from {
+        margin-top: -120px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+/*.letter:nth-child(9):before {
+    content: "0639187542";
+    margin-top: -72px;
+    animation-name: letter9;
+    animation-duration: 2.25s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter9 {
+    from {
+        margin-top: -72px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}*/
+
+.letter:nth-child(10):before {
+    content: "1028965473";
+    margin-top: -120px;
+    animation-name: letter10;
+    animation-duration: 1.6333333333s;
+    animation-delay: 0.51s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter10 {
+    from {
+        margin-top: -120px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(11):before {
+    content: "0792164538";
+    margin-top: -24px;
+    animation-name: letter11;
+    animation-duration: 0.92s;
+    animation-delay: 0.54s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter11 {
+    from {
+        margin-top: -24px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(12):before {
+    content: "1968205347";
+    margin-top: -72px;
+    animation-name: letter12;
+    animation-duration: 2.04s;
+    animation-delay: 0.32s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter12 {
+    from {
+        margin-top: -72px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(13):before {
+    content: "0925371486";
+    margin-top: -96px;
+    animation-name: letter13;
+    animation-duration: 1.024s;
+    animation-delay: 0.68s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter13 {
+    from {
+        margin-top: -96px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(14):before {
+    content: "1257396048";
+    margin-top: -120px;
+    animation-name: letter14;
+    animation-duration: 0.0333333333s;
+    animation-delay: 0.99s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter14 {
+    from {
+        margin-top: -120px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(15):before {
+    content: "7236809514";
+    margin-top: 0px;
+    animation-name: letter15;
+    animation-duration: 0s;
+    animation-delay: 0.12s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter15 {
+    from {
+        margin-top: 0px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(16):before {
+    content: "3461908725";
+    margin-top: -24px;
+    animation-name: letter16;
+    animation-duration: 0.14s;
+    animation-delay: 0.93s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter16 {
+    from {
+        margin-top: -24px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(17):before {
+    content: "0719856410";
+    margin-top: -96px;
+    animation-name: letter17;
+    animation-duration: 2.72s;
+    animation-delay: 0.15s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter17 {
+    from {
+        margin-top: -96px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(18):before {
+    content: "9714580623";
+    margin-top: -120px;
+    animation-name: letter18;
+    animation-duration: 0.2333333333s;
+    animation-delay: 0.93s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter18 {
+    from {
+        margin-top: -120px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(19):before {
+    content: "3679201548";
+    margin-top: -72px;
+    animation-name: letter19;
+    animation-duration: 1.32s;
+    animation-delay: 0.56s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter19 {
+    from {
+        margin-top: -72px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(20):before {
+    content: "5647389201";
+    margin-top: 0px;
+    animation-name: letter20;
+    animation-duration: 0s;
+    animation-delay: 0.53s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter20 {
+    from {
+        margin-top: 0px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+/*.letter:nth-child(21):before {
+    content: "9392784301";
+    margin-top: -72px;
+    animation-name: letter21;
+    animation-duration: 1.32s;
+    animation-delay: 0.56s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter21 {
+    from {
+        margin-top: -72px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}*/
+.letter:nth-child(22):before {
+    content: "812736459";
+    margin-top: -96px;
+    animation-name: letter22;
+    animation-duration: 2.72s;
+    animation-delay: 0.15s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter22 {
+    from {
+        margin-top: -96px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(23):before {
+    content: "0987654321";
+    margin-top: -120px;
+    animation-name: letter23;
+    animation-duration: 0.2333333333s;
+    animation-delay: 0.93s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter23 {
+    from {
+        margin-top: -120px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(24):before {
+    content: "2910368745";
+    margin-top: -72px;
+    animation-name: letter24;
+    animation-duration: 1.32s;
+    animation-delay: 0.56s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter24 {
+    from {
+        margin-top: -72px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(25):before {
+    content: "6321950748";
+    margin-top: 0px;
+    animation-name: letter25;
+    animation-duration: 0s;
+    animation-delay: 0.53s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter25 {
+    from {
+        margin-top: 0px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+
+
+
+
+.letter:nth-child(26):before {
+    content: "5329061847";
+    margin-top: -96px;
+    animation-name: letter26;
+    animation-duration: 2.72s;
+    animation-delay: 0.15s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter26 {
+    from {
+        margin-top: -96px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(27):before {
+    content: "7091823465";
+    margin-top: -120px;
+    animation-name: letter27;
+    animation-duration: 0.2333333333s;
+    animation-delay: 0.93s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter27 {
+    from {
+        margin-top: -120px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+
+.letter:nth-child(28):before {
+    content: "1726039485";
+    margin-top: -72px;
+    animation-name: letter28;
+    animation-duration: 1.32s;
+    animation-delay: 0.56s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes letter28 {
+    from {
+        margin-top: -72px;
+    }
+
+    to {
+        margin-top: 24px;
+    }
+}
+}

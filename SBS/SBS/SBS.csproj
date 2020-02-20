@@ -307,6 +307,7 @@
     <Content Include="js\bootstrap-4.3.1-dist\bootstrap.js" />
     <Content Include="js\bootstrap-4.3.1-dist\bootstrap.min.js" />
     <Content Include="js\custom.js" />
+    <Content Include="js\Inicio.js" />
     <Content Include="js\main.js" />
     <Content Include="js\map-custom.js" />
     <Content Include="js\NuestrosServicios.js" />
