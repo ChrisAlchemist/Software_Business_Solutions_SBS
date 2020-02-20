@@ -556,9 +556,10 @@ nav a:focus {
 	top: 100%;
 	left: 50%;
 	color: transparent;
+	margin-top: -9%;
 	content: '•';
 	text-shadow: 0 0 transparent;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	-webkit-transition: text-shadow 0.3s, color 0.3s;
 	-moz-transition: text-shadow 0.3s, color 0.3s;
 	transition: text-shadow 0.3s, color 0.3s;
@@ -568,11 +569,11 @@ nav a:focus {
 	pointer-events: none;
 }
 
-.cl-effect-13 a:hover::before,
-.cl-effect-13 a:focus::before {
-	color: #fff;
-	text-shadow: 10px 0 #fff, -10px 0 #fff;
-}
+	.cl-effect-13 a:hover::before,
+	.cl-effect-13 a:focus::before {
+		color: #E67E22;
+		text-shadow: 10px 0 #E67E22, -10px 0 #E67E22;
+	}
 
 .cl-effect-13 a:hover,
 .cl-effect-13 a:focus {
