@@ -83,8 +83,11 @@
 
 #subscribe {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/subscribe-bg.jpg) fixed center center;
+    
     background-size: cover;
     padding: 80px 0;
+    border-radius:1%;
+    
 }
 
 #subscribe .subscribe-title {
@@ -181,39 +184,59 @@
 /**Tamaño imagenes carrusel**/
 
 #tecnologia-sql {
+    margin-top:6%;
     width:30%;
     height:30%;
+}
+#tecnologia-bootstrap {
+    margin-top: 5%;
+    width: 33%;
+    height: 33%;
 }
 
 
 #tecnologia-html {
-    width :40%;
-    height:40%;
+    margin-top:5%;
+    width :28%;
+    height:28%;
 }
 
-#tecnologia-bootstrap {
-    width :30%;
-    height:30%;
+
+
+#tecnologia-csharp,
+#tecnologia-ionic,
+#tecnologia-javascript,
+#tecnologia-android,
+#tecnologia-angular,
+#tecnologia-java,
+#tecnologia-net,
+#tecnologia-node,
+#tecnologia-mysql {
+    width: 35%;
+    height: 35%;
 }
 
-#tecnologia-csharp{
-    margin-top: -8%;
-    width:40%;
-    height:40%;
 
+
+
+
+/*efecto imagenes en gris**/
+.slide {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
-#tecnologia-ionic {
-    width :55%; 
-    height:55%;
+
+.slide {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: filter 0.4s;
+    -webkit-transition: -webkit-filter 1s;
 }
 
-#tecnologia-javascript {
-    width :24%;
-    height:24%;
-}
 
-#tecnologia-android {
-    width :16%;
-    height:16%;
-}
+
+.slide:hover {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+    }

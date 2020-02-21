@@ -9,7 +9,7 @@
 #hero {
     display: table;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     background: url(../img/hero-bg.jpg) top center fixed;
     background-size: cover;
 }
@@ -36,7 +36,8 @@
         font-weight: 700;
         line-height: 48px;
         text-transform: uppercase;
-        color: #fff;        
+        color: #fff;     
+        
     }
 
 @media (max-width: 1000px) {
@@ -44,23 +45,35 @@
         font-size: 28px;
         line-height: 36px;
     }
+    .wrapper{
+        margin-top:-2%;
+    }
 }
+
+
+
 
 #hero h2 {
     color: #999;
-    margin-bottom: 50px;
+    margin-top:5%;
+    margin-bottom: 5%;
 }
 
 @media (max-width: 1000px) {
     #hero h2 {
-        font-size: 24px;
+        /*font-size: 24px;
         line-height: 26px;
-        margin-bottom: 30px;
+        margin-bottom: 30px;*/
+        display:none;
     }
 
-        #hero h2 .rotating {
+        /*#hero h2 .rotating {
             display: block;
-        }
+        }*/
+
+    #hero .actions{
+        display: none;
+    }
 }
 
 #hero .rotating > .animated {
@@ -141,32 +154,26 @@
 }
 
 /***Letras Codigo***/
-#inicio-opciones{
-    margin-top:15%;
-}
-
 .wrapper {
     position: absolute;
-    margin-top:10%;
+    
     left: 50%;
     width: 90%;
     font-size: 0;
     transform: translate(-50%);
 }
 
-
-
 .letter {
-    width: 24px;
+    width: 35px;
     display: inline-block;
     vertical-align: middle;
     position: relative;
     overflow: hidden;
     margin: 0 0;
     font-family: sans-serif;
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 35px;
     text-transform: uppercase;
     color: #eee;
 }
@@ -181,536 +188,534 @@
     }
 
     .letter:nth-child(1):before {
-        content: "3279854106";
-        margin-top: -96px;
+        content: "8295407361";
+        margin-top: -140px;
         animation-name: letter1;
-        animation-duration: 2.72s;
-        animation-delay: 0.15s;
+        animation-duration: 2.24s;
+        animation-delay: 0.3s;
         animation-fill-mode: forwards;
     }
 
 @keyframes letter1 {
     from {
-        margin-top: -96px;
+        margin-top: -140px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(2):before {
-    content: "7158064239";
-    margin-top: -120px;
+    content: "2687590413";
+    margin-top: -210px;
     animation-name: letter2;
-    animation-duration: 0.2333333333s;
-    animation-delay: 0.93s;
+    animation-duration: 3.0514285714s;
+    animation-delay: 0.11s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter2 {
     from {
-        margin-top: -120px;
+        margin-top: -210px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(3):before {
-    content: "9156742083";
-    margin-top: -72px;
+    content: "0527634918";
+    margin-top: -140px;
     animation-name: letter3;
-    animation-duration: 1.32s;
-    animation-delay: 0.56s;
+    animation-duration: 3.168s;
+    animation-delay: 0.01s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter3 {
     from {
-        margin-top: -72px;
+        margin-top: -140px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(4):before {
-    content: "0983174625";
-    margin-top: 0px;
+    content: "3028576941";
+    margin-top: -70px;
     animation-name: letter4;
-    animation-duration: 0s;
-    animation-delay: 0.53s;
+    animation-duration: 1.6s;
+    animation-delay: 0.4s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter4 {
     from {
-        margin-top: 0px;
+        margin-top: -70px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(5):before {
-    content: "1976283054";
-    margin-top: -120px;
+    content: "8273546190";
+    margin-top: -175px;
     animation-name: letter5;
-    animation-duration: 0.7333333333s;
-    animation-delay: 0.78s;
+    animation-duration: 1.4666666667s;
+    animation-delay: 0.56s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter5 {
     from {
-        margin-top: -120px;
+        margin-top: -175px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(6):before {
-    content: "7680349152";
-    margin-top: -216px;
+    content: "6409315782";
+    margin-top: -175px;
     animation-name: letter6;
-    animation-duration: 1.188s;
-    animation-delay: 0.67s;
+    animation-duration: 0.9s;
+    animation-delay: 0.73s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter6 {
     from {
-        margin-top: -216px;
+        margin-top: -175px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(7):before {
-    content: "0367195482";
-    margin-top: -144px;
+    content: "8015637294";
+    margin-top: -210px;
     animation-name: letter7;
-    animation-duration: 2.4s;
-    animation-delay: 0.3s;
+    animation-duration: 2.2971428571s;
+    animation-delay: 0.33s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter7 {
     from {
-        margin-top: -144px;
+        margin-top: -210px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(8):before {
-    content: "2460591783";
-    margin-top: -120px;
+    content: "9726184503";
+    margin-top: -105px;
     animation-name: letter8;
-    animation-duration: 3.0333333333s;
-    animation-delay: 0.09s;
+    animation-duration: 0.39s;
+    animation-delay: 0.87s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter8 {
     from {
-        margin-top: -120px;
+        margin-top: -105px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
-/*.letter:nth-child(9):before {
-    content: "0639187542";
-    margin-top: -72px;
+.letter:nth-child(9):before {
+    content: "4851967023";
+    margin-top: -175px;
     animation-name: letter9;
-    animation-duration: 2.25s;
-    animation-delay: 0.25s;
+    animation-duration: 0.3s;
+    animation-delay: 0.91s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter9 {
     from {
-        margin-top: -72px;
+        margin-top: -175px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
-}*/
+}
 
 .letter:nth-child(10):before {
-    content: "1028965473";
-    margin-top: -120px;
+    content: "7521983406";
+    margin-top: -175px;
     animation-name: letter10;
-    animation-duration: 1.6333333333s;
-    animation-delay: 0.51s;
+    animation-duration: 1.2666666667s;
+    animation-delay: 0.62s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter10 {
     from {
-        margin-top: -120px;
+        margin-top: -175px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(11):before {
-    content: "0792164538";
-    margin-top: -24px;
+    content: "7641529038";
+    margin-top: -105px;
     animation-name: letter11;
-    animation-duration: 0.92s;
-    animation-delay: 0.54s;
+    animation-duration: 1.74s;
+    animation-delay: 0.42s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter11 {
     from {
-        margin-top: -24px;
+        margin-top: -105px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(12):before {
-    content: "1968205347";
-    margin-top: -72px;
+    content: "8413657920";
+    margin-top: -280px;
     animation-name: letter12;
-    animation-duration: 2.04s;
-    animation-delay: 0.32s;
+    animation-duration: 3.3777777778s;
+    animation-delay: 0.05s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter12 {
     from {
-        margin-top: -72px;
+        margin-top: -280px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(13):before {
-    content: "0925371486";
-    margin-top: -96px;
+    content: "4389125607";
+    margin-top: -105px;
     animation-name: letter13;
-    animation-duration: 1.024s;
-    animation-delay: 0.68s;
+    animation-duration: 0.21s;
+    animation-delay: 0.93s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter13 {
     from {
-        margin-top: -96px;
+        margin-top: -105px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(14):before {
-    content: "1257396048";
-    margin-top: -120px;
+    content: "6280917453";
+    margin-top: -210px;
     animation-name: letter14;
-    animation-duration: 0.0333333333s;
-    animation-delay: 0.99s;
+    animation-duration: 0.5485714286s;
+    animation-delay: 0.84s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter14 {
     from {
-        margin-top: -120px;
+        margin-top: -210px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(15):before {
-    content: "7236809514";
-    margin-top: 0px;
+    content: "3406915728";
+    margin-top: -210px;
     animation-name: letter15;
-    animation-duration: 0s;
-    animation-delay: 0.12s;
+    animation-duration: 3.36s;
+    animation-delay: 0.02s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter15 {
     from {
-        margin-top: 0px;
+        margin-top: -210px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(16):before {
-    content: "3461908725";
-    margin-top: -24px;
+    content: "2436581970";
+    margin-top: -280px;
     animation-name: letter16;
-    animation-duration: 0.14s;
-    animation-delay: 0.93s;
+    animation-duration: 3.3777777778s;
+    animation-delay: 0.05s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter16 {
     from {
-        margin-top: -24px;
+        margin-top: -280px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(17):before {
-    content: "0719856410";
-    margin-top: -96px;
+    content: "0843297165";
+    margin-top: 0px;
     animation-name: letter17;
-    animation-duration: 2.72s;
-    animation-delay: 0.15s;
+    animation-duration: 0s;
+    animation-delay: 0.63s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter17 {
     from {
-        margin-top: -96px;
+        margin-top: 0px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(18):before {
-    content: "9714580623";
-    margin-top: -120px;
+    content: "7418920635";
+    margin-top: 0px;
     animation-name: letter18;
-    animation-duration: 0.2333333333s;
-    animation-delay: 0.93s;
+    animation-duration: 0s;
+    animation-delay: 0.6s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter18 {
     from {
-        margin-top: -120px;
+        margin-top: 0px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(19):before {
-    content: "3679201548";
-    margin-top: -72px;
+    content: "8016537429";
+    margin-top: -105px;
     animation-name: letter19;
-    animation-duration: 1.32s;
-    animation-delay: 0.56s;
+    animation-duration: 2.22s;
+    animation-delay: 0.26s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter19 {
     from {
-        margin-top: -72px;
+        margin-top: -105px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(20):before {
-    content: "5647389201";
-    margin-top: 0px;
+    content: "5980632741";
+    margin-top: -210px;
     animation-name: letter20;
-    animation-duration: 0s;
-    animation-delay: 0.53s;
+    animation-duration: 1.5085714286s;
+    animation-delay: 0.56s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter20 {
     from {
-        margin-top: 0px;
+        margin-top: -210px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
-/*.letter:nth-child(21):before {
-    content: "9392784301";
-    margin-top: -72px;
+
+.letter:nth-child(21):before {
+    content: "7902315486";
+    margin-top: -210px;
     animation-name: letter21;
-    animation-duration: 1.32s;
-    animation-delay: 0.56s;
+    animation-duration: 2.9485714286s;
+    animation-delay: 0.14s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter21 {
     from {
-        margin-top: -72px;
+        margin-top: -210px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
-}*/
+}
+
 .letter:nth-child(22):before {
-    content: "812736459";
-    margin-top: -96px;
+    content: "6375410298";
+    margin-top: -35px;
     animation-name: letter22;
-    animation-duration: 2.72s;
-    animation-delay: 0.15s;
+    animation-duration: 1.62s;
+    animation-delay: 0.19s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter22 {
     from {
-        margin-top: -96px;
+        margin-top: -35px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(23):before {
-    content: "0987654321";
-    margin-top: -120px;
+    content: "7421603859";
+    margin-top: -70px;
     animation-name: letter23;
-    animation-duration: 0.2333333333s;
-    animation-delay: 0.93s;
+    animation-duration: 0.2933333333s;
+    animation-delay: 0.89s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter23 {
     from {
-        margin-top: -120px;
+        margin-top: -70px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(24):before {
-    content: "2910368745";
-    margin-top: -72px;
+    content: "7605329814";
+    margin-top: -210px;
     animation-name: letter24;
-    animation-duration: 1.32s;
-    animation-delay: 0.56s;
+    animation-duration: 3.2571428571s;
+    animation-delay: 0.05s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter24 {
     from {
-        margin-top: -72px;
+        margin-top: -210px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(25):before {
-    content: "6321950748";
-    margin-top: 0px;
+    content: "8971325046";
+    margin-top: -35px;
     animation-name: letter25;
-    animation-duration: 0s;
-    animation-delay: 0.53s;
+    animation-duration: 1.78s;
+    animation-delay: 0.11s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter25 {
     from {
-        margin-top: 0px;
+        margin-top: -35px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
-
-
-
-
 .letter:nth-child(26):before {
-    content: "5329061847";
-    margin-top: -96px;
+    content: "6485307291";
+    margin-top: -70px;
     animation-name: letter26;
-    animation-duration: 2.72s;
-    animation-delay: 0.15s;
+    animation-duration: 1.3333333333s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter26 {
     from {
-        margin-top: -96px;
+        margin-top: -70px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(27):before {
-    content: "7091823465";
-    margin-top: -120px;
+    content: "0896345712";
+    margin-top: 0px;
     animation-name: letter27;
-    animation-duration: 0.2333333333s;
-    animation-delay: 0.93s;
+    animation-duration: 0s;
+    animation-delay: 0.4s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter27 {
     from {
-        margin-top: -120px;
+        margin-top: 0px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
 
 .letter:nth-child(28):before {
-    content: "1726039485";
-    margin-top: -72px;
+    content: "0157942836";
+    margin-top: -315px;
     animation-name: letter28;
-    animation-duration: 1.32s;
-    animation-delay: 0.56s;
+    animation-duration: 2.16s;
+    animation-delay: 0.4s;
     animation-fill-mode: forwards;
 }
 
 @keyframes letter28 {
     from {
-        margin-top: -72px;
+        margin-top: -315px;
     }
 
     to {
-        margin-top: 24px;
+        margin-top: 35px;
     }
 }
-}
+ 
